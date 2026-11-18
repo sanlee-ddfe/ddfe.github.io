@@ -1,24 +1,44 @@
 # ------------------------------------------------------------
 # Research page (/research/)
 #
-#   title:      theme name
-#   impact:     one sentence
-#   highlights: key papers (label shown, url optional)
-#   partners:   sponsors / collaborators (one line)
+#   intro:      one-line mission statement
+#   keywords:   tags shown under the intro
+#   themes:
+#     title:      theme name
+#     impact:     one sentence
+#     highlights: key papers / projects (label shown, url optional)
+#     partners:   sponsors / collaborators (one line)
 # ------------------------------------------------------------
 
-intro: We turn expensive flow problems into fast, reliable AI predictions — from fundamental turbulence to industrial processes.
+intro: We accelerate the analysis and design of fluid engineering systems with AI — turning expensive flow problems into fast, reliable predictions.
+
+keywords:
+  - Accelerated analysis & design of fluid engineering systems
+  - Scientific machine learning
+  - Quantum-inspired AI
+  - Turbulence
+  - Semiconductor processes
+  - Marine system design
+  - Ventilation & smoke control
+  - Digital twins
 
 themes:
   - title: Physics AI & Neural Operators
-    impact: Neural networks that learn flow physics — from deep-learning prediction of vortex shedding to physics-informed networks and quantum-inspired neural operators.
+    impact: Neural networks that learn flow physics — from deep-learning prediction of vortex shedding to physics-informed networks and neural operators.
     highlights:
       - label: J. Fluid Mech. 2019 · Top-10 most cited in JFM
-        url: https://arxiv.org/abs/1804.06076
-      - label: Phys. Fluids 2021
-        url: https://arxiv.org/abs/1909.06042
+        url: https://doi.org/10.1017/jfm.2019.700
+      - label: J. Comput. Phys. 2026 (accepted)
+        url: https://github.com/rider37/dl-amr
       - label: Eng. Appl. Artif. Intell. 2026
-    partners: NRF Young Investigator Program (2026–2031)
+    partners: NRF
+
+  - title: Quantum-Inspired AI (QI)
+    impact: Quantum-inspired physical AI and neural operators for next-generation fluid simulation.
+    highlights:
+      - label: NRF Young Investigator Program (2026–2031)
+      - label: Korea–Japan Workshop on Physical AI & Fluid Mechanics (2026–2027)
+    partners: National Research Foundation of Korea (NRF)
 
   - title: Turbulence over Rough Surfaces
     impact: Predicting drag directly from surface topography — and explaining which roughness features cause it.
@@ -34,20 +54,33 @@ themes:
   - title: AI for Semiconductor Processes
     impact: Physics-aware AI surrogates and multiscale CFD for CVD, ALD and wafer bonding — accurate even with scarce process data.
     highlights:
-      - label: Eng. Appl. Artif. Intell. (in press)
+      - label: Eng. Appl. Artif. Intell. 2026
       - label: Adv. Eng. Softw. 2026
         url: https://www.sciencedirect.com/science/article/pii/S0965997825001899
     partners: Samsung Electronics (3 projects)
 
+  - title: Marine System Design Optimization
+    impact: AI-accelerated design optimization of marine systems such as CDW, together with ocean engineering researchers.
+    highlights:
+      - label: Marine Space and Resource Utilization Research (2026–2027)
+    partners: Korea Institute of Marine Science & Technology Promotion (KIMST)
+
+  - title: Underground Parking Ventilation
+    impact: Edge-AI ventilation and smoke control for underground parking lots — optimizing jet fans and tracing pollutant sources in real time.
+    highlights:
+      - label: KSCFE 2026 · Bayesian optimization of jet fan speeds
+      - label: KSCFE 2026 · Pollutant source tracking with source-to-sensor operators
+    partners: Ministry of SMEs and Startups, NBCore Co., Ltd.
+
   - title: Urban & Energy Flows
-    impact: Rapid AI prediction and control of urban wind, flooding, underground ventilation and wind energy.
+    impact: Rapid AI prediction of urban wind, flooding, typhoons and wind energy.
     highlights:
       - label: Energy 2023
         url: https://arxiv.org/abs/2304.01545
       - label: Fluids 2022
         url: https://www.mdpi.com/2311-5521/7/12/367
       - label: Sci. Rep. 2019
-    partners: E8 Co., Ltd., NBCore Co., Ltd.
+    partners: E8 Co., Ltd.
 
   - title: Digital Twins
     impact: AI-assisted digital twins of real systems — Korea's lunar orbiter, the human airway, and industrial processes.
