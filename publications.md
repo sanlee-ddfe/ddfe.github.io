@@ -16,7 +16,7 @@ permalink: /publications/
 
 ## Journals
 
-\*Co-first or Co-corresponding Authors
+<p class="note">* Co-first or Co-corresponding Authors</p>
 
 1. **Jaewon Jang**, Taegeun Kim, Hyoungsoo Ko, Joosung Lee, Sejin Kim, Sunyoung Park, Jae Myung Choe, Young-gu Kim, Dae Sin Kim, Donghyun You\*, **Sangseung Lee\***. Zernike-Aware Neural Networks for Accurate Wafer Map Prediction in Chemical Vapor Deposition Processes, *Engineering Applications of Artificial Intelligence* (In press)
 1. **Jiwon Kang, Minhyeok Oh**, Joongoo Jeon, **Sangseung Lee**. Comparison of AI Turbulence Prediction Performance Across Time Scale: A Comparative Study of U-Net and Diffusion Model, *Journal of Computational Fluids Engineering* (In press)

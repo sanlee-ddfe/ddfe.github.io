@@ -1,0 +1,142 @@
+---
+layout: default
+title: Research
+permalink: /research/
+subtitle: AI × fluid mechanics — from fundamental turbulence to industrial processes.
+---
+{% assign R = site.data.research %}
+{% assign all_projects = site.data.projects.ongoing | concat: site.data.projects.completed %}
+{% assign industry_projects = all_projects | where_exp: "p", "p.industry" %}
+
+{% comment %} Count journal papers on the Publications page (works whether it is rendered yet or not) {% endcomment %}
+{% assign pubpage = site.pages | where: "url", "/publications/" | first %}
+{% if pubpage.content contains "<li>" %}
+  {% assign pubcount = pubpage.content | split: "<li>" | size | minus: 1 %}
+{% else %}
+  {% assign pubcount = pubpage.content | split: "
+1. " | size | minus: 1 %}
+{% endif %}
+
+<!-- ===== Intro + at a glance ===== -->
+<section class="content research-intro">
+  <div class="container">
+    <p class="lead intro-lead">DDFE develops AI-driven frameworks for fluid and physical systems. We combine <strong>high-fidelity simulation</strong> with <strong>physics-aware, explainable machine learning</strong> to turn expensive flow problems into fast, reliable predictions — in academia and with industry.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat-num">{{ pubcount }}</span><span class="stat-label">Journal papers</span></div>
+      <div class="stat"><span class="stat-num">{{ all_projects | size }}</span><span class="stat-label">Funded projects</span></div>
+      <div class="stat"><span class="stat-num">{{ site.data.projects.ongoing | size }}</span><span class="stat-label">Ongoing projects</span></div>
+      <div class="stat"><span class="stat-num">{{ industry_projects | size }}</span><span class="stat-label">Industry-sponsored projects</span></div>
+    </div>
+
+    <nav class="theme-nav" aria-label="Research themes">
+      {% for t in R.themes %}
+      <a href="#{{ t.id }}" class="theme-pill">
+        <span class="theme-pill-icon">{% include icon.html name=t.icon %}</span>{{ t.title }}
+      </a>
+      {% endfor %}
+    </nav>
+  </div>
+</section>
+
+<!-- ===== Themes ===== -->
+{% for t in R.themes %}
+{% assign odd = forloop.index0 | modulo: 2 %}
+<section class="theme{% if odd == 1 %} soft{% endif %}" id="{{ t.id }}">
+  <div class="container">
+    <div class="theme-grid{% if odd == 1 %} reverse{% endif %}">
+      <div class="theme-text">
+        <span class="eyebrow">{{ forloop.index | prepend: '0' }} · {{ t.eyebrow }}</span>
+        <h2 class="display">{{ t.title }}</h2>
+        <p class="theme-summary">{{ t.summary }}</p>
+
+        <h3 class="mini-head">What we do</h3>
+        <ul class="check-list">
+          {% for w in t.what %}<li>{{ w }}</li>{% endfor %}
+        </ul>
+      </div>
+      <div class="theme-side">
+        <figure class="theme-figure">
+          <img src="{{ t.image | relative_url }}" alt="{{ t.title }}" loading="lazy">
+        </figure>
+        {% if t.funding %}
+        <h3 class="mini-head">Funded by &amp; working with</h3>
+        <div class="tag-row">
+          {% for f in t.funding %}<span class="tag tag-strong">{{ f }}</span>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="results">
+      <h3 class="mini-head">Selected results</h3>
+      <div class="result-grid">
+        {% for r in t.results %}
+        {% if r.url %}<a class="result" href="{{ r.url }}">{% else %}<div class="result">{% endif %}
+          <span class="result-venue">{{ r.venue }} · {{ r.year }}</span>
+          <span class="result-title">{{ r.text }}</span>
+          {% if r.note %}<span class="result-note">{{ r.note }}</span>{% endif %}
+        {% if r.url %}</a>{% else %}</div>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="tag-row keywords">
+      {% for k in t.keywords %}<span class="tag">{{ k }}</span>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<!-- ===== How we work with partners ===== -->
+<section class="section partner-section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Collaborate with DDFE</span>
+      <h2 class="display">How we can work together</h2>
+    </div>
+    <div class="engage-grid">
+      {% for e in R.engage %}
+      <div class="engage-card">
+        <span class="engage-num">{{ forloop.index }}</span>
+        <h3>{{ e.title }}</h3>
+        <p>{{ e.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="toolbox">
+      <h3 class="mini-head center">Our toolbox</h3>
+      <div class="tag-row center">
+        {% for k in R.toolbox %}<span class="tag">{{ k }}</span>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Partners logos ===== -->
+<section class="section soft collaborators">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Collaborators</span>
+      <h2 class="display">Working with partners in academia and industry</h2>
+    </div>
+    <img src="{{ '/assets/images/collaborators.png' | relative_url }}" alt="Collaborators: KTH, Aarhus University, KIT, USC, POSTECH, Jeonbuk National University, Samsung, Doosan, Hyundai" loading="lazy">
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Have a flow problem in mind?</h2>
+        <p>Let's talk about joint research, AI surrogates for your simulations, or collaboration on national projects.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="mailto:{{ site.email }}?subject=Research%20collaboration%20with%20DDFE">Contact Prof. Lee</a>
+        <a class="btn btn-outline" href="{{ '/projects/' | relative_url }}">See our projects</a>
+      </div>
+    </div>
+  </div>
+</section>

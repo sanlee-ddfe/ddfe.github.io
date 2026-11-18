@@ -1,26 +1,88 @@
 ---
 layout: default
 title: Home
-hero: /assets/images/hero.jpg
-hero_title: Data-Driven Fluid Engineering Lab.
+hero: true
 ---
 
+<!-- ===== Hero ===== -->
+<section class="hero" style="background-image: url('{{ '/assets/images/hero.jpg' | relative_url }}');">
+  <div class="hero-inner container">
+    <p class="hero-eyebrow">Inha University · Mechanical Engineering</p>
+    <h1>Data-Driven Fluid<br>Engineering Lab.</h1>
+    <p class="hero-sub">AI-driven frameworks for fluid and physical systems.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/research/' | relative_url }}">Explore our research</a>
+      <a class="btn btn-ghost" href="{{ '/team/open-positions/' | relative_url }}">Join us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Welcome ===== -->
 <section class="section">
   <div class="container welcome">
     <div>
-      <h2>Welcome to DDFE!</h2>
+      <span class="eyebrow">Welcome to DDFE</span>
+      <h2 class="display">Understanding complex flows with data and physics.</h2>
       <p class="lead">Welcome to the <strong>Data-driven Fluid Engineering Lab (DDFE)</strong>.</p>
-      <p>We develop AI-driven frameworks for fluid and physical systems, covering turbulence over rough surfaces, semiconductor process foundation models, fusion and quantum computing–enabled AI, and urban flow prediction and control, with an emphasis on data-driven and explainable modeling of complex multiscale phenomena.</p>
+      <p>We develop AI-driven frameworks for fluid and physical systems, covering turbulence over rough surfaces, semiconductor process foundation models, quantum computing–enabled AI, and urban flow prediction and control, with an emphasis on data-driven and explainable modeling of complex multiscale phenomena.</p>
     </div>
     {% include video.html video=site.data.videos.intro %}
   </div>
 </section>
 
+<!-- ===== Research areas ===== -->
+<section class="section soft" id="research">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Research</span>
+      <h2 class="display">What we work on</h2>
+    </div>
+    <div class="research-grid">
+      {% for r in site.data.research.themes %}
+      <a class="research-card" href="{{ '/research/' | relative_url }}#{{ r.id }}">
+        <div class="research-icon">{% include icon.html name=r.icon %}</div>
+        <h3>{{ r.title }}</h3>
+        <p>{{ r.short }}</p>
+        <span class="card-more">Learn more</span>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="quick-links">
+      <a class="chip" href="{{ '/research/' | relative_url }}">Research overview</a>
+      <a class="chip" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="chip" href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a class="chip" href="{{ '/videos/' | relative_url }}">Videos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Latest news ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head split">
+      <div>
+        <span class="eyebrow">News</span>
+        <h2 class="display">Latest from the lab</h2>
+      </div>
+      <a class="more-link" href="{{ '/news/' | relative_url }}">All news</a>
+    </div>
+    <div class="news-cards">
+      {% for n in site.data.news limit: 6 %}
+        {% include news-card.html item=n %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ===== Videos ===== -->
 <section class="section soft">
   <div class="container">
-    <div class="section-head">
-      <h2>Recent Videos</h2>
-      <a class="more-link" href="{{ '/videos/' | relative_url }}">Click for more videos</a>
+    <div class="section-head split">
+      <div>
+        <span class="eyebrow">Videos</span>
+        <h2 class="display">Research in motion</h2>
+      </div>
+      <a class="more-link" href="{{ '/videos/' | relative_url }}">All videos</a>
     </div>
     <div class="video-grid three">
       {% assign featured = site.data.videos.list | where_exp: "v", "v.featured" %}
@@ -31,23 +93,29 @@ hero_title: Data-Driven Fluid Engineering Lab.
   </div>
 </section>
 
+<!-- ===== Team CTA ===== -->
 <section class="section">
   <div class="container">
-    <div class="section-head">
-      <h2>Recent News</h2>
-      <a class="more-link" href="{{ '/news/' | relative_url }}">Click for more News</a>
-    </div>
-    <div class="news-list">
-      {% for n in site.data.news limit: 5 %}
-        {% include news-item.html item=n %}
-      {% endfor %}
+    <div class="cta-band">
+      <div>
+        <h2>Join DDFE</h2>
+        <p>Interested in AI for fluid mechanics? We welcome motivated students and researchers.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="{{ '/team/current-members/' | relative_url }}">Meet the team</a>
+        <a class="btn btn-outline" href="mailto:{{ site.email }}">Contact us</a>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- ===== Collaborators ===== -->
 <section class="section soft collaborators">
   <div class="container">
-    <h2 class="center">Collaborators</h2>
+    <div class="section-head center">
+      <span class="eyebrow">Collaborators</span>
+      <h2 class="display">Working together with</h2>
+    </div>
     <img src="{{ '/assets/images/collaborators.png' | relative_url }}" alt="Collaborators: KTH, Aarhus University, KIT, USC, POSTECH, Jeonbuk National University, Samsung, Doosan, Hyundai" loading="lazy">
   </div>
 </section>

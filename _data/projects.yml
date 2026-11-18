@@ -1,9 +1,15 @@
 # ------------------------------------------------------------
 # Research projects
-# role: PI or Co-Investigator
+# role: PI or Co-Investigator (optional)
+# industry: true  -> counted as an industry-sponsored project on the Research page
 # ------------------------------------------------------------
 
 ongoing:
+  - title: Development of a Full-Physics-Based 3D Wafer Bonding Model
+    sponsor: Samsung Electronics
+    industry: true
+    period: Oct 2026 – Oct 2027
+    role: PI
   - title: Development of Fundamental Technology for Fluid Analysis Using Quantum-Inspired Physical AI and Neural Operators
     sponsor: National Research Foundation of Korea (NRF)
     period: Mar 2026 – Feb 2031
@@ -14,6 +20,7 @@ ongoing:
     role: PI
   - title: Development of an Edge AI-Integrated Ventilation and Smoke Control System for Underground Parking Lots Using Airflow Analysis
     sponsor: Ministry of SMEs and Startups (via NBCore Co., Ltd.)
+    industry: true
     period: Jul 2026 – Dec 2026
     role: PI
   - title: Marine Space and Resource Utilization Research for Training Talent in Sustainable Marine Industries
@@ -32,6 +39,7 @@ ongoing:
 completed:
   - title: Development of a Scale Analysis Model for Self-Limited ALD Process Reactors
     sponsor: Samsung Electronics
+    industry: true
     period: Aug 2025 – Aug 2026
     role: PI
   - title: Development of a Hybrid Solver for Improving Big Data-Based Reactor Core/Thermal-Hydraulic Numerical Analysis
@@ -44,6 +52,7 @@ completed:
     role: Co-Investigator
   - title: Development of Data-Driven CFD Analysis Technology for Co-Optimization of Nano-Patterns and In-Equipment Process Variation
     sponsor: Samsung Electronics
+    industry: true
     period: Jun 2024 – May 2025
     role: PI
   - title: Innovation Center for Future Mobility Convergence Technology
@@ -56,9 +65,11 @@ completed:
     role: PI
   - title: Development of AI-Based Rapid Prediction Code for Urban Flooding in Smart Cities
     sponsor: E8 Co., Ltd.
+    industry: true
     period: May 2023 – Jan 2024
     role: PI
   - title: AI-Based Rapid Prediction of Wind Fields in Smart Cities
     sponsor: E8 Co., Ltd.
+    industry: true
     period: Sep 2022 – Jan 2023
     role: PI

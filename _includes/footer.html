@@ -1,7 +1,19 @@
 <footer class="site-footer">
-  <div class="container">
-    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <span class="sep">|</span>
-    <span>{{ site.address }}</span>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="DDFE logo">
+      <div>
+        <strong>{{ site.title }}</strong><br>
+        Department of Mechanical Engineering, Inha University
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      {% for item in site.data.navigation %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endfor %}
+    </nav>
+    <div class="footer-contact">
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+      {{ site.address }}
+    </div>
   </div>
+  <div class="container footer-bottom">© {{ site.time | date: "%Y" }} {{ site.short_title }} Lab, Inha University</div>
 </footer>

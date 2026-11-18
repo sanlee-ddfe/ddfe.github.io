@@ -13,7 +13,7 @@ permalink: /projects/
       <li>
         <span class="p-title">{{ p.title }}</span>
         <span class="p-meta">{{ p.sponsor }} | {{ p.period }}</span>
-        <span class="role {% if p.role == 'PI' %}pi{% else %}co{% endif %}">{{ p.role }}</span>
+        {% if p.role %}<span class="role {% if p.role == 'PI' %}pi{% else %}co{% endif %}">{{ p.role }}</span>{% endif %}
       </li>
       {% endfor %}
     </ul>
