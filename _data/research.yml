@@ -8,6 +8,7 @@
 #     impact:     one sentence
 #     highlights: key papers / projects (label shown, url optional)
 #     partners:   sponsors / collaborators (one line)
+#     earlier:    true -> listed under "Earlier research" at the bottom
 # ------------------------------------------------------------
 
 intro: We accelerate the analysis and design of fluid engineering systems with AI — turning expensive flow problems into fast, reliable predictions.
@@ -16,6 +17,8 @@ keywords:
   - Accelerated analysis & design of fluid engineering systems
   - Scientific machine learning
   - Quantum-inspired AI
+  - Adaptive mesh refinement
+  - Small modular reactors
   - Turbulence
   - Semiconductor processes
   - Marine system design
@@ -28,8 +31,8 @@ themes:
     highlights:
       - label: J. Fluid Mech. 2019 · Top-10 most cited in JFM
         url: https://doi.org/10.1017/jfm.2019.700
-      - label: J. Comput. Phys. 2026 (accepted)
-        url: https://github.com/rider37/dl-amr
+      - label: Phys. Fluids 2021
+        url: https://arxiv.org/abs/1909.06042
       - label: Eng. Appl. Artif. Intell. 2026
     partners: NRF
 
@@ -40,16 +43,12 @@ themes:
       - label: Korea–Japan Workshop on Physical AI & Fluid Mechanics (2026–2027)
     partners: National Research Foundation of Korea (NRF)
 
-  - title: Turbulence over Rough Surfaces
-    impact: Predicting drag directly from surface topography — and explaining which roughness features cause it.
+  - title: AI-Driven Adaptive Mesh Refinement for SMR
+    impact: Deep-learning adaptive mesh refinement (AMR) that puts resolution where the simulation needs it — toward fast, accurate thermal-hydraulic analysis of small modular reactors (SMR).
     highlights:
-      - label: J. Fluid Mech. 2022
-        url: https://arxiv.org/abs/2106.05995
-      - label: Phys. Fluids 2024
-        url: https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on
-      - label: Flow 2025
-        url: https://arxiv.org/abs/2405.09256
-    partners: KTH (Sweden), KIT (Germany), NRF
+      - label: J. Comput. Phys. 2026 (accepted)
+      - label: 14NCFE 2026 · Bayesian optimization of AMR parameters
+    partners: POSTECH, NRF
 
   - title: AI for Semiconductor Processes
     impact: Physics-aware AI surrogates and multiscale CFD for CVD, ALD and wafer bonding — accurate even with scarce process data.
@@ -72,6 +71,18 @@ themes:
       - label: KSCFE 2026 · Pollutant source tracking with source-to-sensor operators
     partners: Ministry of SMEs and Startups, NBCore Co., Ltd.
 
+  - title: Turbulence over Rough Surfaces
+    impact: Predicting drag directly from surface topography — and explaining which roughness features cause it.
+    highlights:
+      - label: J. Fluid Mech. 2022
+        url: https://arxiv.org/abs/2106.05995
+      - label: Phys. Fluids 2024
+        url: https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on
+      - label: Flow 2025
+        url: https://arxiv.org/abs/2405.09256
+    partners: KTH (Sweden), KIT (Germany), NRF
+    earlier: true
+
   - title: Urban & Energy Flows
     impact: Rapid AI prediction of urban wind, flooding, typhoons and wind energy.
     highlights:
@@ -81,6 +92,7 @@ themes:
         url: https://www.mdpi.com/2311-5521/7/12/367
       - label: Sci. Rep. 2019
     partners: E8 Co., Ltd.
+    earlier: true
 
   - title: Digital Twins
     impact: AI-assisted digital twins of real systems — Korea's lunar orbiter, the human airway, and industrial processes.
@@ -92,3 +104,4 @@ themes:
       - label: Future Gener. Comput. Syst. 2026
         url: https://www.sciencedirect.com/science/article/pii/S0167739X25002304
     partners: KARI, POSTECH, RWTH Aachen University
+    earlier: true

@@ -1,0 +1,11 @@
+{% assign t = include.theme %}
+<li class="theme">
+  <h2>{{ t.title }}</h2>
+  <div>
+    <p class="theme-impact">{{ t.impact }}</p>
+    <p class="theme-meta">
+      {% for h in t.highlights %}{% if h.url %}<a href="{{ h.url }}">{{ h.label }}</a>{% else %}<span>{{ h.label }}</span>{% endif %}{% unless forloop.last %}<span class="dot">·</span>{% endunless %}{% endfor %}
+    </p>
+    <p class="theme-partners">With {{ t.partners }}</p>
+  </div>
+</li>

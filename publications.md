@@ -19,7 +19,7 @@ permalink: /publications/
 
 <p class="note">* Co-first or Co-corresponding Authors</p>
 
-1. **Jiwon Kang**, **Minhyeok Oh**, **Jongmin Son**, J. Jeon\*, **S. Lee\*** (2026). Heteroscedastic residual learning for dynamic adaptive mesh refinement in bluff-body wake flows. *Journal of Computational Physics* (Accepted). [[Code](https://github.com/rider37/dl-amr)]
+1. **Jiwon Kang**, **Minhyeok Oh**, **Jongmin Son**, J. Jeon\*, **S. Lee\*** (2026). Heteroscedastic residual learning for dynamic adaptive mesh refinement in bluff-body wake flows. *Journal of Computational Physics* (Accepted).
 1. **Hojin Lee**, R. Puri, R. Sarma, A. Lintermann, **S. Lee**, **Mario Rüttgers** (2026). Drag-aware UAV path planning in unseen urban domains using graph convolutional neural network-based flow prediction. *Journal of Mechanical Science and Technology*, 1–13.
 1. **Jaewon Jang**, T. Kim, H. Ko, J. Lee, S. Kim, S. Park, J. M. Choe, Y.-g. Kim, D. S. Kim, D. You\*, **S. Lee\*** (2026). Zernike-aware neural networks for accurate wafer map prediction in chemical vapor deposition processes. *Engineering Applications of Artificial Intelligence*, 177, 115016.
 1. **Jiwon Kang**, **Minhyeok Oh**, J. Jeon, **S. Lee** (2026). Comparison of AI turbulence prediction performance across time scale: A comparative study of U-Net and diffusion model. *Journal of Computational Fluids Engineering*.
@@ -37,7 +37,7 @@ permalink: /publications/
 1. **Heesoo Shin**, M. Rüttgers, **S. Lee** (2022). Neural networks for improving wind power efficiency: A review. *Fluids*, 7(12), 367. [[Link](https://www.mdpi.com/2311-5521/7/12/367)]
 1. M. Rüttgers, S. Jeon, **S. Lee**, D. You (2022). Prediction of typhoon track and intensity using a generative adversarial network with observational and meteorological data. *IEEE Access*, 10, 48434–48446.
 1. B. Choi, **S. Lee**, D. You (2022). Prediction of molten steel flow in a tundish with water model data using a generative neural network with different clip sizes. *Journal of Mechanical Science and Technology*, 36(2), 749–759.
-1. **S. Lee**, J. Yang, P. Forooghi, A. Stroh, S. Bagheri (2022). Predicting drag on rough surfaces by transfer learning of empirical correlations. *Journal of Fluid Mechanics*, 933, A18. [[arXiv](https://arxiv.org/abs/2106.05995)] [[Code](https://drive.google.com/file/d/1JCdTyu7WeGRz6Gs3za8b5o_zCU50CL_9/view?usp=sharing)]
+1. **S. Lee**, J. Yang, P. Forooghi, A. Stroh, S. Bagheri (2022). Predicting drag on rough surfaces by transfer learning of empirical correlations. *Journal of Fluid Mechanics*, 933, A18. [[arXiv](https://arxiv.org/abs/2106.05995)]
 1. S. Jeon, **S. Lee**, S. Ha, S. Kim, D. You (2021). Effects of a moving weir on tundish flow during continuous-casting grade-transition. *Journal of Mechanical Science and Technology*, 35(9), 4001–4009.
 1. **S. Lee**, D. You (2021). Analysis of a convolutional neural network for predicting unsteady volume wake flow fields. *Physics of Fluids*, 33, 035152. [[arXiv](https://arxiv.org/abs/1909.06042)]
 1. T. Go, **S. Lee**, D. You, S. J. Lee (2020). Deep learning-based hologram generation using a white light source. *Scientific Reports*, 10, 8977.

@@ -223,3 +223,6 @@ h3 { font-size: 1.15rem; margin: 0 0 .4rem; }
 .keyword-row { display: flex; flex-wrap: wrap; gap: 8px; margin: -0.8rem 0 2.5rem; }
 .keyword { display: inline-block; padding: 5px 12px; border-radius: 999px; background: var(--bg-soft); color: var(--muted); font-size: .88rem; }
 .keyword-main { background: #e8f1fa; color: var(--accent); font-weight: 600; }
+.earlier-title { font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 3rem 0 .8rem; }
+.themes.earlier { border-top: 1px solid var(--line); }
+.themes.earlier .theme h2 { color: var(--muted); }
