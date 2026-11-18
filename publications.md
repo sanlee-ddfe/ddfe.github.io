@@ -6,7 +6,7 @@ permalink: /publications/
 <!--
   How to edit:
   - Format:  Authors (Year). Title. *Journal*, Volume(Issue), Pages. [links]
-  - Authors: initials + surname (e.g. S. Lee). **bold** = lab members. Corresponding author: \*
+  - Authors: initials + surname (e.g. S. Lee); lab students in full name and **bold** (e.g. **Jiwon Kang**). Corresponding author: \*
   - Add a new paper as a new "1." line at the top of the Journals list (numbers are automatic).
   - Extra notes go on the next line, indented by 3 spaces, wrapped in <span class="related">…</span>.
 -->
@@ -19,22 +19,22 @@ permalink: /publications/
 
 <p class="note">* Co-first or Co-corresponding Authors</p>
 
-1. **J. Kang**, **M. Oh**, **J. Son**, J. Jeon\*, **S. Lee\*** (2026). Heteroscedastic residual learning for dynamic adaptive mesh refinement in bluff-body wake flows. *Journal of Computational Physics* (Accepted). [[Code](https://github.com/rider37/dl-amr)]
-1. H. Lee, R. Puri, R. Sarma, A. Lintermann, **S. Lee**, **M. Rüttgers** (2026). Drag-aware UAV path planning in unseen urban domains using graph convolutional neural network-based flow prediction. *Journal of Mechanical Science and Technology*, 1–13.
-1. **J. Jang**, T. Kim, H. Ko, J. Lee, S. Kim, S. Park, J. M. Choe, Y.-g. Kim, D. S. Kim, D. You\*, **S. Lee\*** (2026). Zernike-aware neural networks for accurate wafer map prediction in chemical vapor deposition processes. *Engineering Applications of Artificial Intelligence*, 177, 115016.
-1. **J. Kang**, **M. Oh**, J. Jeon, **S. Lee** (2026). Comparison of AI turbulence prediction performance across time scale: A comparative study of U-Net and diffusion model. *Journal of Computational Fluids Engineering* (In press).
+1. **Jiwon Kang**, **Minhyeok Oh**, **Jongmin Son**, J. Jeon\*, **S. Lee\*** (2026). Heteroscedastic residual learning for dynamic adaptive mesh refinement in bluff-body wake flows. *Journal of Computational Physics* (Accepted). [[Code](https://github.com/rider37/dl-amr)]
+1. **Hojin Lee**, R. Puri, R. Sarma, A. Lintermann, **S. Lee**, **Mario Rüttgers** (2026). Drag-aware UAV path planning in unseen urban domains using graph convolutional neural network-based flow prediction. *Journal of Mechanical Science and Technology*, 1–13.
+1. **Jaewon Jang**, T. Kim, H. Ko, J. Lee, S. Kim, S. Park, J. M. Choe, Y.-g. Kim, D. S. Kim, D. You\*, **S. Lee\*** (2026). Zernike-aware neural networks for accurate wafer map prediction in chemical vapor deposition processes. *Engineering Applications of Artificial Intelligence*, 177, 115016.
+1. **Jiwon Kang**, **Minhyeok Oh**, J. Jeon, **S. Lee** (2026). Comparison of AI turbulence prediction performance across time scale: A comparative study of U-Net and diffusion model. *Journal of Computational Fluids Engineering*.
 1. S. Jo, S. Park, J. Shin, J. Park, H. Kim, S. Ko\*, **S. Lee\***, J. Jeon\* (2026). Task-aware evolution in physics-informed neural networks: Application to Saint-Venant torsion problems. *Engineering Applications of Artificial Intelligence*, 168, 113988.
-1. T. Kim, H. Ko, **J. Jang**, S. Kim, S. Park, J. M. Choe, Y.-g. Kim, D. S. Kim, **S. Lee\***, D. You\* (2026). An efficient multiscale coupling method for simulations of reactor-scale chemical vapor deposition with microstructural features. *Advances in Engineering Software*, 212, 104051. [[Link](https://www.sciencedirect.com/science/article/pii/S0965997825001899)]
-1. **M. Rüttgers**, M. Waldmann, F. Hübenthal, K. Vogt, M. Tsubokura, **S. Lee**, A. Lintermann (2026). Towards a widespread usage of computational fluid dynamics simulations for automated virtual nasal surgery planning. *Future Generation Computer Systems*, 174, 107935. [[Link](https://www.sciencedirect.com/science/article/pii/S0167739X25002304)]
-1. **M. Rüttgers**, J. Vorspohl, L. Mayolle, B. Johanning-Meiners, D. Krug, M. Klaas, M. Meinke, **S. Lee**, W. Schröder, A. Lintermann (2025). Comparative analysis of the flow in a realistic human airway. *Physics of Fluids*, 37(12), 121901. [[Link](https://pubs.aip.org/aip/pof/article/37/12/121901/3374000)]
+1. T. Kim, H. Ko, **Jaewon Jang**, S. Kim, S. Park, J. M. Choe, Y.-g. Kim, D. S. Kim, **S. Lee\***, D. You\* (2026). An efficient multiscale coupling method for simulations of reactor-scale chemical vapor deposition with microstructural features. *Advances in Engineering Software*, 212, 104051. [[Link](https://www.sciencedirect.com/science/article/pii/S0965997825001899)]
+1. **Mario Rüttgers**, M. Waldmann, F. Hübenthal, K. Vogt, M. Tsubokura, **S. Lee**, A. Lintermann (2026). Towards a widespread usage of computational fluid dynamics simulations for automated virtual nasal surgery planning. *Future Generation Computer Systems*, 174, 107935. [[Link](https://www.sciencedirect.com/science/article/pii/S0167739X25002304)]
+1. **Mario Rüttgers**, J. Vorspohl, L. Mayolle, B. Johanning-Meiners, D. Krug, M. Klaas, M. Meinke, **S. Lee**, W. Schröder, A. Lintermann (2025). Comparative analysis of the flow in a realistic human airway. *Physics of Fluids*, 37(12), 121901. [[Link](https://pubs.aip.org/aip/pof/article/37/12/121901/3374000)]
 1. B. Jang, M. J. Jeon, **S. Lee\***, H. Jin (2025). Neural network-based thermal model for virtual metrology of lunar orbiter temperatures via active and transfer learning. *International Communications in Heat and Mass Transfer*, 165, 109055. [[Link](https://www.sciencedirect.com/science/article/pii/S0735193325004816)]
-1. Z. Shi, S. M. H. Khorasani, **H. Shin**, J. Yang, **S. Lee**, S. Bagheri (2025). Drag prediction of rough-wall turbulent flow using data-driven regression. *Flow*, 5, E5. [[arXiv](https://arxiv.org/abs/2405.09256)]
-1. **H. Shin**, S. M. H. Khorasani, Z. Shi, J. Yang, S. Bagheri, **S. Lee** (2024). Data-driven discovery of drag-inducing elements on a rough surface through convolutional neural networks. *Physics of Fluids*, 36(9), 095172. [[Link](https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on)] [[arXiv](https://arxiv.org/abs/2405.09071)]
+1. Z. Shi, S. M. H. Khorasani, **Heesoo Shin**, J. Yang, **S. Lee**, S. Bagheri (2025). Drag prediction of rough-wall turbulent flow using data-driven regression. *Flow*, 5, E5. [[arXiv](https://arxiv.org/abs/2405.09256)]
+1. **Heesoo Shin**, S. M. H. Khorasani, Z. Shi, J. Yang, S. Bagheri, **S. Lee** (2024). Data-driven discovery of drag-inducing elements on a rough surface through convolutional neural networks. *Physics of Fluids*, 36(9), 095172. [[Link](https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on)] [[arXiv](https://arxiv.org/abs/2405.09071)]
 1. J. Yang, A. Stroh, **S. Lee**, S. Bagheri, B. Frohnapfel, P. Forooghi (2024). Assessment of roughness characterization methods for data-driven predictions. *Flow, Turbulence and Combustion*, 113(2), 275–292.
-1. **J. Kang**, **H. Shin**, **S. Lee** (2024). Strategies and applications for predicting flow using neural networks: A review. *JMST Advances*, 6(1), 55–60.
+1. **Jiwon Kang**, **Heesoo Shin**, **S. Lee** (2024). Strategies and applications for predicting flow using neural networks: A review. *JMST Advances*, 6(1), 55–60.
 1. J. Yang, A. Stroh, **S. Lee**, S. Bagheri, B. Frohnapfel, P. Forooghi (2023). Prediction of equivalent sand-grain size and identification of drag-relevant scales of roughness – a data-driven approach. *Journal of Fluid Mechanics*, 975, A34. [[arXiv](https://arxiv.org/abs/2304.08958)]
-1. **H. Shin**, M. Rüttgers, **S. Lee** (2023). Effects of spatiotemporal correlations in wind data on neural network-based wind predictions. *Energy*, 279, 128068. [[arXiv](https://arxiv.org/abs/2304.01545)]
-1. **H. Shin**, M. Rüttgers, **S. Lee** (2022). Neural networks for improving wind power efficiency: A review. *Fluids*, 7(12), 367. [[Link](https://www.mdpi.com/2311-5521/7/12/367)]
+1. **Heesoo Shin**, M. Rüttgers, **S. Lee** (2023). Effects of spatiotemporal correlations in wind data on neural network-based wind predictions. *Energy*, 279, 128068. [[arXiv](https://arxiv.org/abs/2304.01545)]
+1. **Heesoo Shin**, M. Rüttgers, **S. Lee** (2022). Neural networks for improving wind power efficiency: A review. *Fluids*, 7(12), 367. [[Link](https://www.mdpi.com/2311-5521/7/12/367)]
 1. M. Rüttgers, S. Jeon, **S. Lee**, D. You (2022). Prediction of typhoon track and intensity using a generative adversarial network with observational and meteorological data. *IEEE Access*, 10, 48434–48446.
 1. B. Choi, **S. Lee**, D. You (2022). Prediction of molten steel flow in a tundish with water model data using a generative neural network with different clip sizes. *Journal of Mechanical Science and Technology*, 36(2), 749–759.
 1. **S. Lee**, J. Yang, P. Forooghi, A. Stroh, S. Bagheri (2022). Predicting drag on rough surfaces by transfer learning of empirical correlations. *Journal of Fluid Mechanics*, 933, A18. [[arXiv](https://arxiv.org/abs/2106.05995)] [[Code](https://drive.google.com/file/d/1JCdTyu7WeGRz6Gs3za8b5o_zCU50CL_9/view?usp=sharing)]
@@ -51,7 +51,7 @@ permalink: /publications/
 
 ## Preprints
 
-1. H. Lee, A. Lintermann, **S. Lee**, **M. Rüttgers** (2026). UrbanFlow-3K: A dataset of 3,000 lattice-Boltzmann simulations of random building layouts. *arXiv preprint* arXiv:2603.16554. [[arXiv](https://arxiv.org/abs/2603.16554)]
+1. **Hojin Lee**, A. Lintermann, **S. Lee**, **Mario Rüttgers** (2026). UrbanFlow-3K: A dataset of 3,000 lattice-Boltzmann simulations of random building layouts. *arXiv preprint* arXiv:2603.16554. [[arXiv](https://arxiv.org/abs/2603.16554)]
 1. J. Lee, **S. Lee**, D. You (2018). Deep learning approach in multi-scale prediction of turbulent mixing-layer. *arXiv preprint* arXiv:1809.07021. [[arXiv](https://arxiv.org/abs/1809.07021)]
 
 </div>
