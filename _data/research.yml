@@ -8,7 +8,6 @@
 #     impact:     one sentence
 #     highlights: key papers / projects (label shown, url optional)
 #     partners:   sponsors / collaborators (one line)
-#     earlier:    true -> listed under "Earlier research" at the bottom
 # ------------------------------------------------------------
 
 intro: We accelerate the analysis and design of fluid engineering systems with AI — turning expensive flow problems into fast, reliable predictions.
@@ -81,7 +80,6 @@ themes:
       - label: Flow 2025
         url: https://arxiv.org/abs/2405.09256
     partners: KTH (Sweden), KIT (Germany), NRF
-    earlier: true
 
   - title: Urban & Energy Flows
     impact: Rapid AI prediction of urban wind, flooding, typhoons and wind energy.
@@ -92,7 +90,6 @@ themes:
         url: https://www.mdpi.com/2311-5521/7/12/367
       - label: Sci. Rep. 2019
     partners: E8 Co., Ltd.
-    earlier: true
 
   - title: Digital Twins
     impact: AI-assisted digital twins of real systems — Korea's lunar orbiter, the human airway, and industrial processes.
@@ -104,4 +101,3 @@ themes:
       - label: Future Gener. Comput. Syst. 2026
         url: https://www.sciencedirect.com/science/article/pii/S0167739X25002304
     partners: KARI, POSTECH, RWTH Aachen University
-    earlier: true

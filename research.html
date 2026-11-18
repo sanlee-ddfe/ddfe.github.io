@@ -12,18 +12,9 @@ permalink: /research/
       {% for k in R.keywords %}<span class="keyword{% if forloop.first %} keyword-main{% endif %}">{{ k }}</span>{% endfor %}
     </div>
 
-    {% assign current = R.themes | where_exp: "t", "t.earlier != true" %}
-    {% assign earlier = R.themes | where_exp: "t", "t.earlier == true" %}
     <ol class="themes">
-      {% for t in current %}{% include research-theme.html theme=t %}{% endfor %}
+      {% for t in R.themes %}{% include research-theme.html theme=t %}{% endfor %}
     </ol>
-
-    {% if earlier.size > 0 %}
-    <h3 class="earlier-title">Earlier research</h3>
-    <ol class="themes earlier" start="{{ current.size | plus: 1 }}" style="counter-reset: theme {{ current.size }};">
-      {% for t in earlier %}{% include research-theme.html theme=t %}{% endfor %}
-    </ol>
-    {% endif %}
 
     <div class="cta">
       <p>Interested in a joint project? Let's talk.</p>
