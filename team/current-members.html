@@ -14,10 +14,8 @@ permalink: /team/current-members/
         <ul>
           {% for c in pi.cv %}<li{% if c.strong %} class="strong"{% endif %}>{{ c.text }}</li>{% endfor %}
         </ul>
-        <div class="pi-links">
-          <a class="chip" href="mailto:{{ pi.email }}">Email</a>
-          <a class="chip" href="{{ pi.scholar }}">Google Scholar</a>
-        </div>
+        <p>Contact: <a href="mailto:{{ pi.email }}">Email</a><br>
+        Google scholar: <a href="{{ pi.scholar }}">Link</a></p>
       </div>
     </div>
 
@@ -36,7 +34,7 @@ permalink: /team/current-members/
     {% endfor %}
 
     <div class="cta">
-      <a class="btn btn-primary" href="{{ '/team/open-positions/' | relative_url }}">Join us! Click here to check Open Positions</a>
+      <a class="button" href="{{ '/team/open-positions/' | relative_url }}">Join us! Click here to check Open Positions</a>
     </div>
   </div>
 </section>

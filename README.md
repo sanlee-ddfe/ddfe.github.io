@@ -35,7 +35,7 @@ GitHub Pages 에서 Jekyll 로 자동 빌드됩니다. 별도 빌드 과정 없�
 | 상단 메뉴 | `_data/navigation.yml` |
 | 이메일·주소 (footer) | `_config.yml` |
 | 홈 소개 문구 | `index.html` |
-| Research 페이지 + 홈의 연구분야 카드 | `_data/research.yml` |
+| Research 페이지 | `_data/research.yml` |
 | 디자인 (색상, 글꼴 등) | `assets/css/style.css` |
 
 ### 뉴스 추가 예시

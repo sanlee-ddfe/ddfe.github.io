@@ -1,205 +1,61 @@
 # ------------------------------------------------------------
-# Research themes
-#  - Shown as cards on the Home page (title, icon, short)
-#  - Shown in full on the Research page (/research/)
+# Research page (/research/)
 #
-# Fields:
-#   id:        anchor for links (e.g. /research/#rough-surfaces)
-#   icon:      roughness | semiconductor | quantum | city | twin
-#   eyebrow:   small label above the title
-#   short:     one line for the Home page card
-#   summary:   paragraph for the Research page
-#   image:     representative figure
-#   what:      bullet list of what we do
-#   results:   selected publications (text, venue, year, url optional, note optional)
-#   funding:   sponsors / partners shown as chips
-#   keywords:  tags
+#   title:      theme name
+#   impact:     one sentence
+#   highlights: key papers (label shown, url optional)
+#   partners:   sponsors / collaborators (one line)
 # ------------------------------------------------------------
+
+intro: We turn expensive flow problems into fast, reliable AI predictions — from fundamental turbulence to industrial processes.
 
 themes:
-  - id: physics-ai
-    icon: quantum
-    eyebrow: Scientific machine learning
-    title: Physics AI & Neural Operators
-    short: Deep learning, physics-informed networks and quantum-inspired neural operators for fast, reliable flow prediction.
-    summary: >-
-      We build neural networks that learn the physics of unsteady and turbulent flows —
-      from our early deep-learning predictions of vortex shedding to physics-informed neural networks
-      and quantum-inspired neural operators for next-generation fluid simulation.
-    image: /assets/images/news/2026-03-eaai-pinn.jpg
-    what:
-      - Deep-learning prediction of unsteady wake flows and turbulence (CNN, GAN, U-Net, diffusion models)
-      - Physics-informed neural networks (PINNs) as mesh-free alternatives to FEM for engineering problems
-      - Quantum-inspired physical AI and neural operators for next-generation fluid simulation
-      - Hybrid big-data solvers for nuclear reactor core and thermal-hydraulic analysis
-    results:
-      - text: Data-driven prediction of unsteady flow over a circular cylinder using deep learning
-        venue: Journal of Fluid Mechanics
-        year: 2019
-        note: Top-10 most cited paper in JFM (JCR 2021)
+  - title: Physics AI & Neural Operators
+    impact: Neural networks that learn flow physics — from deep-learning prediction of vortex shedding to physics-informed networks and quantum-inspired neural operators.
+    highlights:
+      - label: J. Fluid Mech. 2019 · Top-10 most cited in JFM
         url: https://arxiv.org/abs/1804.06076
-      - text: Analysis of a convolutional neural network for predicting unsteady volume wake flow fields
-        venue: Physics of Fluids
-        year: 2021
+      - label: Phys. Fluids 2021
         url: https://arxiv.org/abs/1909.06042
-      - text: "Task-aware evolution in physics-informed neural networks: Application to Saint-Venant torsion problems"
-        venue: Engineering Applications of Artificial Intelligence
-        year: 2026
-    funding:
-      - NRF Young Investigator (2026–2031)
-      - NRF Korea–Japan Workshop on Physical AI
-      - NRF
-    keywords: [Neural operators, PINNs, Diffusion models, Quantum-inspired AI, Surrogate modeling]
+      - label: Eng. Appl. Artif. Intell. 2026
+    partners: NRF Young Investigator Program (2026–2031)
 
-  - id: rough-surfaces
-    icon: roughness
-    eyebrow: Explainable AI for turbulence
-    title: Turbulence over Rough Surfaces
-    short: Predicting drag directly from surface topography — and explaining which roughness features cause it.
-    summary: >-
-      Surface roughness increases drag on pipes, ships, turbines and aircraft, yet predicting it usually
-      requires costly simulations or experiments. Together with KTH (Sweden) and KIT (Germany), we developed
-      neural networks that predict drag from surface topography alone and interpret them to reveal
-      the drag-inducing features of a surface.
-    image: /assets/images/news/jk-flow-2.jpg
-    what:
-      - Transfer learning that combines empirical correlations with high-fidelity simulation data
-      - CNN-based drag prediction using only surface topography
-      - Explainable AI to discover drag-relevant roughness scales and elements
-    results:
-      - text: Predicting drag on rough surfaces by transfer learning of empirical correlations
-        venue: Journal of Fluid Mechanics
-        year: 2022
+  - title: Turbulence over Rough Surfaces
+    impact: Predicting drag directly from surface topography — and explaining which roughness features cause it.
+    highlights:
+      - label: J. Fluid Mech. 2022
         url: https://arxiv.org/abs/2106.05995
-      - text: Data-driven discovery of drag-inducing elements on a rough surface through convolutional neural networks
-        venue: Physics of Fluids
-        year: 2024
+      - label: Phys. Fluids 2024
         url: https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on
-      - text: Drag prediction of rough-wall turbulent flow using data-driven regression
-        venue: Flow
-        year: 2025
+      - label: Flow 2025
         url: https://arxiv.org/abs/2405.09256
-    funding:
-      - NRF (2022–2024)
-      - KTH Royal Institute of Technology
-      - Karlsruhe Institute of Technology
-    keywords: [Surface roughness, Drag prediction, Transfer learning, Explainable AI, Turbulence]
+    partners: KTH (Sweden), KIT (Germany), NRF
 
-  - id: semiconductor
-    icon: semiconductor
-    eyebrow: Industry-scale process modeling
-    title: AI for Semiconductor Processes
-    short: Physics-aware AI surrogates and multiscale simulation for CVD, ALD and wafer bonding.
-    summary: >-
-      Semiconductor process experiments are expensive and data are scarce. Working with Samsung Electronics,
-      we combine high-fidelity CFD with physics-aware deep learning to predict process outcomes such as
-      wafer-level thickness maps — fast enough for process optimization and quality control —
-      as a step toward semiconductor process foundation models.
-    image: /assets/images/news/2026-04-eaai-zernike.jpg
-    what:
-      - Physics-aware neural networks for wafer map prediction under data scarcity (Zernike priors + CNN, c-GAN, c-DDIM)
-      - Efficient multiscale coupling of reactor-scale and feature-scale CVD simulations
-      - Scale analysis models for self-limited ALD process reactors
-      - Full-physics-based 3D wafer bonding modeling
-    results:
-      - text: Zernike-aware neural networks for accurate wafer map prediction in chemical vapor deposition processes
-        venue: Engineering Applications of Artificial Intelligence
-        year: In press
-      - text: An efficient multiscale coupling method for simulations of reactor-scale chemical vapor deposition with microstructural features
-        venue: Advances in Engineering Software
-        year: 2026
+  - title: AI for Semiconductor Processes
+    impact: Physics-aware AI surrogates and multiscale CFD for CVD, ALD and wafer bonding — accurate even with scarce process data.
+    highlights:
+      - label: Eng. Appl. Artif. Intell. (in press)
+      - label: Adv. Eng. Softw. 2026
         url: https://www.sciencedirect.com/science/article/pii/S0965997825001899
-    funding:
-      - Samsung Electronics (3 projects)
-      - POSTECH
-    keywords: [CVD, ALD, Wafer bonding, Wafer map prediction, Multiscale CFD, Data-scarce learning]
+    partners: Samsung Electronics (3 projects)
 
-  - id: urban-flows
-    icon: city
-    eyebrow: Smart and safe cities
-    title: Urban, Environmental & Energy Flows
-    short: Rapid AI prediction and control of urban wind, flooding, ventilation, typhoons and wind energy.
-    summary: >-
-      Cities and energy systems need flow predictions in seconds, not days. We develop AI models that rapidly
-      predict urban wind fields, urban flooding, typhoon tracks and wind resources, and we build AI-integrated
-      ventilation and smoke control for underground spaces.
-    image: /assets/images/news/2023-06-energy-paper.jpg
-    what:
-      - AI-based rapid prediction of wind fields and urban flooding for smart cities
-      - Edge-AI ventilation and smoke control for underground parking lots, with Bayesian optimization of jet fans and pollutant source tracking
-      - Neural-network wind prediction for improving wind power efficiency
-      - Typhoon track and intensity prediction from satellite and meteorological data
-    results:
-      - text: Effects of spatiotemporal correlations in wind data on neural network based wind predictions
-        venue: Energy
-        year: 2023
+  - title: Urban & Energy Flows
+    impact: Rapid AI prediction and control of urban wind, flooding, underground ventilation and wind energy.
+    highlights:
+      - label: Energy 2023
         url: https://arxiv.org/abs/2304.01545
-      - text: "Neural networks for improving wind power efficiency: a review"
-        venue: Fluids
-        year: 2022
+      - label: Fluids 2022
         url: https://www.mdpi.com/2311-5521/7/12/367
-      - text: Prediction of a typhoon track using a generative adversarial network and satellite images
-        venue: Scientific Reports
-        year: 2019
-    funding:
-      - E8 Co., Ltd. (2 projects)
-      - Ministry of SMEs and Startups · NBCore Co., Ltd.
-    keywords: [Urban wind, Flood prediction, Ventilation control, Wind energy, Edge AI, Bayesian optimization]
+      - label: Sci. Rep. 2019
+    partners: E8 Co., Ltd., NBCore Co., Ltd.
 
-  - id: digital-twins
-    icon: twin
-    eyebrow: From spacecraft to the human airway
-    title: Digital Twins for Engineering & Biomedical Systems
-    short: AI-assisted virtual models of spacecraft, the human airway, steelmaking and vehicles.
-    summary: >-
-      We combine AI with high-fidelity simulation to build digital twins of real systems — enabling
-      real-time monitoring, faster design and better decisions, from Korea's lunar orbiter to
-      CFD-assisted nasal surgery planning.
-    image: /assets/images/news/2025-12-pof-airway.jpg
-    what:
-      - Virtual metrology of lunar orbiter (Danuri) temperatures with active and transfer learning, with POSTECH and KARI
-      - Lattice-Boltzmann simulation of the human airway and automated virtual nasal surgery planning, with RWTH Aachen and Jülich Supercomputing Centre
-      - Generative neural networks for molten-steel flow in continuous-casting tundishes
-      - Vehicle aerodynamics and drag reduction for heavy vehicles
-    results:
-      - text: Neural network-based thermal model for virtual metrology of lunar orbiter temperatures via active and transfer learning
-        venue: International Communications in Heat and Mass Transfer
-        year: 2025
+  - title: Digital Twins
+    impact: AI-assisted digital twins of real systems — Korea's lunar orbiter, the human airway, and industrial processes.
+    highlights:
+      - label: Int. Commun. Heat Mass Transf. 2025
         url: https://www.sciencedirect.com/science/article/pii/S0735193325004816
-      - text: Comparative analysis of the flow in a realistic human airway
-        venue: Physics of Fluids
-        year: 2025
+      - label: Phys. Fluids 2025
         url: https://pubs.aip.org/aip/pof/article/37/12/121901/3374000
-      - text: Towards a widespread usage of computational fluid dynamics simulations for automated virtual nasal surgery planning
-        venue: Future Generation Computer Systems
-        year: 2026
+      - label: Future Gener. Comput. Syst. 2026
         url: https://www.sciencedirect.com/science/article/pii/S0167739X25002304
-    funding:
-      - NRF International Digital Twin Network (2024–2025)
-      - RWTH Aachen University
-      - KARI
-    keywords: [Digital twin, Virtual metrology, Biomedical flows, Lattice Boltzmann, Spacecraft thermal]
-
-# ------------------------------------------------------------
-# "How we work with partners" section on the Research page
-# ------------------------------------------------------------
-engage:
-  - title: Joint R&D projects
-    text: Industry-sponsored research on your process or product, such as our process-modeling projects with Samsung Electronics.
-  - title: AI surrogates & digital twins
-    text: Turning your simulation or measurement data into fast, physics-aware predictive models.
-  - title: National research programs
-    text: Partnering on NRF, KETEP, KIAT, IITP and other government-funded projects and consortia.
-  - title: Workshops & exchange
-    text: International seminars and workshops on AI for fluid mechanics, such as JK-FLOW and the Korea–Japan Physical AI workshop.
-
-toolbox:
-  - Deep learning (CNN, GAN, U-Net, diffusion)
-  - Neural operators
-  - Physics-informed neural networks
-  - Transfer & active learning
-  - Explainable AI
-  - Bayesian optimization
-  - DNS / LES / Lattice Boltzmann
-  - Multiscale CFD
-  - Reduced-order models
+    partners: KARI, POSTECH, RWTH Aachen University

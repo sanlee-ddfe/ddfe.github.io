@@ -1,5 +1,5 @@
 {% assign n = include.item %}
-<article class="news-item{% unless n.images %} no-image{% endunless %}" id="{{ n.date | append: ' ' | append: n.title | slugify }}">
+<article class="news-item{% unless n.images %} no-image{% endunless %}">
   {% if n.images %}
   <div class="news-media">
     {% for img in n.images %}
@@ -8,7 +8,7 @@
   </div>
   {% endif %}
   <div class="news-body">
-    {% if n.date %}<span class="eyebrow">{{ n.date }}</span>{% endif %}
+    {% if n.date %}<span class="news-date">{{ n.date }}</span>{% endif %}
     <h3>{{ n.title }}</h3>
     {% if n.subtitle %}<p class="news-subtitle">{{ n.subtitle }}</p>{% endif %}
     {% if n.body %}<div class="news-text">{{ n.body | markdownify }}</div>{% endif %}

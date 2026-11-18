@@ -7,28 +7,24 @@ permalink: /team/alumni/
 <section class="content">
   <div class="container">
     <h2 class="group-title">Postdoctoral Researchers</h2>
-    <div class="alumni-grid">
     {% for p in a.postdocs %}
     <div class="alumni-block">
       <div class="name">{{ p.name }}{% if p.name_ko %} ({{ p.name_ko }}){% endif %}</div>
       <p>{{ p.period }}</p>
-      {% if p.scholar %}<p><a href="{{ p.scholar }}">Google Scholar ›</a></p>{% endif %}
-      {% if p.current %}<p class="now">Currently {{ p.current }}</p>{% endif %}
+      {% if p.scholar %}<p>Google scholar: <a href="{{ p.scholar }}">Link</a></p>{% endif %}
+      {% if p.current %}<p>Currently {{ p.current }}</p>{% endif %}
     </div>
     {% endfor %}
-    </div>
 
     <h2 class="group-title">Master Students</h2>
-    <div class="alumni-grid">
     {% for p in a.masters %}
     <div class="alumni-block">
       <div class="name">{{ p.name }}{% if p.name_ko %} ({{ p.name_ko }}){% endif %}</div>
       <p>{{ p.period }}{% if p.degree %} · Degree: {{ p.degree }}{% endif %}</p>
-      {% if p.scholar %}<p><a href="{{ p.scholar }}">Google Scholar ›</a></p>{% endif %}
-      {% if p.current %}<p class="now">Currently {{ p.current }}</p>{% endif %}
+      {% if p.scholar %}<p>Google scholar: <a href="{{ p.scholar }}">Link</a></p>{% endif %}
+      {% if p.current %}<p>Currently {{ p.current }}</p>{% endif %}
     </div>
     {% endfor %}
-    </div>
 
     <h2 class="group-title">Undergraduate Research Assistants</h2>
     <ul class="alumni-list">
