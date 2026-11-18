@@ -1,0 +1,69 @@
+# ------------------------------------------------------------
+# Current members
+# To add a member: put a photo in /assets/images/members/ and add an entry.
+# Photos display best in portrait (3:4) ratio.
+# ------------------------------------------------------------
+
+pi:
+  name: Sangseung Lee (이상승), Ph.D.
+  photo: /assets/images/members/sangseung-lee.jpg
+  email: sangseunglee@inha.ac.kr
+  scholar: https://scholar.google.com/citations?user=ejt60CoAAAAJ&hl=en
+  cv:
+    - text: 2022- Assistant Professor, Department of Mechanical Engineering, Inha University
+      strong: true
+    - text: 2022- Director of the Applied AI Center for Thermal and Fluid Research @ Inha
+      strong: true
+    - text: 2026- Board Member, Fluid Engineering Division, Korean Society of Mechanical Engineers (KSME)
+    - text: 2026- Board Member, Korean Society of Computational Fluid Engineering (KSCFE)
+    - text: 2024- Artificial Intelligence Research Committee, Korean Society of Mechanical Engineers (KSME)
+    - text: 2021-2022 Postdoc, FLOW Center, KTH Royal Institute of Technology
+    - text: 2020-2021 Postdoc, Basic Science Research Institute, POSTECH
+    - text: 2020 PhD, Mechanical Engineering, POSTECH
+    - text: 2015 BS, Mechanical Engineering, POSTECH
+
+groups:
+  - title: PhD Students
+    members:
+      - name: Ji Won Kang
+        name_ko: 강지원
+        photo: /assets/images/members/jiwon-kang.jpg
+        email: kgw1704@inha.edu
+
+  - title: Master Students
+    members:
+      - name: Jaewon Jang
+        name_ko: 장재원
+        photo: /assets/images/members/jaewon-jang.jpg
+        email: poroparo5624@gmail.com
+      - name: Ho Jin Lee
+        name_ko: 이호진
+        photo: /assets/images/members/hojin-lee.jpg
+        email: djdg8972@inha.edu
+      - name: Min Hyeok Oh
+        name_ko: 오민혁
+        photo: /assets/images/members/minhyeok-oh.jpg
+        email: omh9675@inha.edu
+      - name: Jongmin Son
+        name_ko: 손종민
+        photo: /assets/images/members/jongmin-son.jpg
+        email: sonjm6041@inha.edu
+      - name: Jinsu Choi
+        name_ko: 최진수
+        photo: /assets/images/members/jinsu-choi.jpg
+        email: amdkaos@inha.edu
+
+  - title: Undergraduate Research Assistant
+    members:
+      - name: Jeongmin Kim
+        name_ko: 김정민
+        photo: /assets/images/members/jeongmin-kim.jpg
+      - name: Yeonseul Noh
+        name_ko: 노연슬
+        photo: /assets/images/members/yeonseul-noh.jpg
+      - name: Myeonggyo Seo
+        name_ko: 서명교
+        photo: /assets/images/members/myeonggyo-seo.jpg
+      - name: Bugeon Cha
+        name_ko: 차부건
+        photo: /assets/images/members/bugeon-cha.jpg

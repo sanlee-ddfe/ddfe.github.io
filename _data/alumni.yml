@@ -1,0 +1,40 @@
+# ------------------------------------------------------------
+# Alumni
+# ------------------------------------------------------------
+
+postdocs:
+  - name: Mario Rüttgers
+    period: 2024-2026
+    scholar: https://scholar.google.com/citations?user=0JR3DcMAAAAJ&hl=en
+    current: Assistant Professor @ SUNY Korea
+
+masters:
+  - name: Heesoo Shin
+    name_ko: 신희수
+    period: 2022-2024
+    degree: Master
+    scholar: https://scholar.google.com/citations?user=nQ6vteQAAAAJ&hl=en&oi=ao
+    current: PhD student @ POSTECH (Flow Physics and Engineering Lab)
+
+undergrads:
+  - Dongyeon Kang (강동연)
+  - Suuk Lee (이수욱)
+  - Hyeseon Ryu (류혜선)
+  - Hyunsoo Kim (김현수), currently @ POSTECH
+  - Hyun Wook Chung (정현욱), currently @ Hyundai Namyang R&D Center.
+  - Hyeonseok Kim (김현석), currently @ Samsung C&T Corporation.
+  - Yoonseo Shin (신윤서)
+  - Hyunmin Bae (배현민)
+  - Hyeonha Lim (임현하)
+  - Geonho Kang (강건호)
+  - Seungbeen Moon (문승빈)
+  - Seongjin Bang (방성진)
+  - Seoyoun Lim (임서윤)
+  - Seung Won Sohn (손승원)
+  - Yejin Seo (서예진)
+  - Minkyu Lee (이민규)
+  - Kyumin Hwang (황규민)
+  - Aziz Askarov
+  - Suzi Ha (하수지)
+  - Seonoh Ryu (류선오)
+  - Myeongjin Kim (김명진)

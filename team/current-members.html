@@ -1,0 +1,40 @@
+---
+layout: default
+title: Current Members
+permalink: /team/current-members/
+---
+{% assign pi = site.data.members.pi %}
+<section class="content">
+  <div class="container">
+    <h2 class="group-title">Principal Investigator</h2>
+    <div class="pi">
+      <img src="{{ pi.photo | relative_url }}" alt="{{ pi.name }}">
+      <div>
+        <h3>{{ pi.name }}</h3>
+        <ul>
+          {% for c in pi.cv %}<li{% if c.strong %} class="strong"{% endif %}>{{ c.text }}</li>{% endfor %}
+        </ul>
+        <p>Contact: <a href="mailto:{{ pi.email }}">Email</a><br>
+        Google scholar: <a href="{{ pi.scholar }}">Link</a></p>
+      </div>
+    </div>
+
+    {% for g in site.data.members.groups %}
+    <h2 class="group-title">{{ g.title }}</h2>
+    <div class="member-grid">
+      {% for m in g.members %}
+      <div class="member">
+        <img src="{{ m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">
+        <div class="name">{{ m.name }}</div>
+        {% if m.name_ko %}<div class="name-ko">{{ m.name_ko }}</div>{% endif %}
+        {% if m.email %}<div class="contact">Contact: <a href="mailto:{{ m.email }}">Email</a></div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+
+    <div class="cta">
+      <a class="button" href="{{ '/team/open-positions/' | relative_url }}">Join us! Click here to check Open Positions</a>
+    </div>
+  </div>
+</section>

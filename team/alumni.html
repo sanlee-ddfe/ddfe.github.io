@@ -1,0 +1,34 @@
+---
+layout: default
+title: Alumni
+permalink: /team/alumni/
+---
+{% assign a = site.data.alumni %}
+<section class="content">
+  <div class="container">
+    <h2 class="group-title">Postdoctoral Researchers</h2>
+    {% for p in a.postdocs %}
+    <div class="alumni-block">
+      <div class="name">{{ p.name }}{% if p.name_ko %} ({{ p.name_ko }}){% endif %}</div>
+      <p>{{ p.period }}</p>
+      {% if p.scholar %}<p>Google scholar: <a href="{{ p.scholar }}">Link</a></p>{% endif %}
+      {% if p.current %}<p>Currently {{ p.current }}</p>{% endif %}
+    </div>
+    {% endfor %}
+
+    <h2 class="group-title">Master Students</h2>
+    {% for p in a.masters %}
+    <div class="alumni-block">
+      <div class="name">{{ p.name }}{% if p.name_ko %} ({{ p.name_ko }}){% endif %}</div>
+      <p>{{ p.period }}{% if p.degree %} · Degree: {{ p.degree }}{% endif %}</p>
+      {% if p.scholar %}<p>Google scholar: <a href="{{ p.scholar }}">Link</a></p>{% endif %}
+      {% if p.current %}<p>Currently {{ p.current }}</p>{% endif %}
+    </div>
+    {% endfor %}
+
+    <h2 class="group-title">Undergraduate Research Assistants</h2>
+    <ul class="alumni-list">
+      {% for u in a.undergrads %}<li>{{ u }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>

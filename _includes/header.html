@@ -1,0 +1,32 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
+      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="DDFE logo">
+      <span>{{ site.short_title }}</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+    <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        {% for item in site.data.navigation %}
+          {% assign active = false %}
+          {% if item.url == "/" %}
+            {% if page.url == "/" or page.url == "/index.html" %}{% assign active = true %}{% endif %}
+          {% elsif page.url contains item.url %}
+            {% assign active = true %}
+          {% endif %}
+          <li class="{% if item.children %}has-children{% endif %}{% if active %} active{% endif %}">
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% if item.children %}
+            <ul class="submenu">
+              {% for child in item.children %}
+              <li{% if page.url == child.url %} class="active"{% endif %}><a href="{{ child.url | relative_url }}">{{ child.title }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

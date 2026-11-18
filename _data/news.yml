@@ -1,0 +1,216 @@
+# ------------------------------------------------------------
+# News items — newest first.
+# The first 5 items are also shown on the Home page.
+#
+# Fields:
+#   date:     label shown as a badge (optional), e.g. "2026-Oct"
+#   title:    headline (required)
+#   subtitle: italic line under the title (optional)
+#   body:     text in Markdown (optional) — use "|" for multiple lines
+#   images:   list of image paths under /assets/images/news/ (optional)
+# ------------------------------------------------------------
+
+- date: 2026-Oct
+  title: Hojin and Jinsu presented at KSCFE
+  body: |
+    Hojin presented "베이지안 최적화를 통한 지하주차장 제트 팬 속도 최적화" at KSCE
+
+    Jinsu presented "Source to sensor response operator를 이용한 지하주차장 오염원 역추적" at KSCE
+  images:
+    - /assets/images/news/2026-10-kscfe-hojin-jinsu.jpg
+
+- date: 2026-Oct
+  title: Prof. Sangseung Lee received the Young Researcher Award from the Korean Society of Computational Fluids Engineering (KSCFE)
+  images:
+    - /assets/images/news/2026-10-kscfe-young-researcher-award.jpg
+
+- date: 2026-Oct
+  title: Prof. Romit Maulik visited DDFE
+  body: |
+    Happy to host Prof. Romit Maulik (Purdue Univ.) for an invited talk and engaging discussion at Inha University!
+  images:
+    - /assets/images/news/2026-10-romit-maulik-visit.jpg
+
+- date: 2026-Sep
+  title: Dr. Mario Rüttgers appointed as an Assistant Professor @ SUNY Korea
+  subtitle: Our former Postdoc Dr. Mario Rüttgers has been appointed Assistant Professor @ SUNY Korea
+  body: |
+    The entire DDFE lab wishes Mario continued success in his new role
+  images:
+    - /assets/images/news/2026-09-mario-suny-korea.jpg
+
+- date: 2026-July
+  title: Conference Presentation at 14NCFE 2026
+  subtitle: Jongmin presented his recent research in Pyeongchang
+  body: |
+    Jongmin presented their research at the 14NCFE held in Pyeongchang.
+
+    He presented *"Bayesian optimization of AMR parameters for 2D flow past a circular cylinder at Re = 150"*
+  images:
+    - /assets/images/news/2026-07-14ncfe.jpg
+
+- date: 2026-April
+  title: Accepted in Engineering Applications of Artificial Intelligence
+  subtitle: Zernike-Aware Neural Networks for Accurate Wafer Map Prediction in Chemical Vapor Deposition Processes
+  body: |
+    Our lab is pleased to announce that the paper **"Zernike-Aware Neural Networks for Accurate Wafer Map Prediction in Chemical Vapor Deposition Processes"** has been accepted for publication in Engineering Applications of Artificial Intelligence. This study proposes a hybrid deep learning framework, Soft-Zernike Neural Network (SZNN), that integrates a Zernike polynomial-based reduced-order model (Z-Reg) with conditional predictive neural networks (CNN, c-GAN, c-DDIM) for accurate wafer map prediction in semiconductor CVD processes. By injecting a physics-aware low-order structural prior into the learning process, SZNN effectively addresses the critical challenge of data scarcity in semiconductor manufacturing, suppressing common failure modes such as overfitting, mode collapse, and hallucination. Validated on both industrial and CFD-generated datasets, the proposed framework consistently outperforms conventional data-driven models in prediction accuracy and training stability—demonstrating strong potential as a practical surrogate for real-time process optimization and quality control in advanced semiconductor fabrication.
+  images:
+    - /assets/images/news/2026-04-eaai-zernike.jpg
+
+- date: 2026-April
+  title: Conference Presentation at KSCFE 2026
+  subtitle: Jaewon and Minhyeok presented their recent research in Jecheon
+  body: |
+    Jaewon and Minhyeok presented their research at the Korean Society of Computational Fluids Engineering conference held in Jecheon.
+
+    Jaewon presented *"Energy dissipation model: Physics-oriented predictive model via progressive frequency refinement,"* while Minhyeok presented *"UNet-Attention based time-series prediction of thermal flow fields."*
+  images:
+    - /assets/images/news/2026-04-kscfe.jpg
+
+- date: 2026-March
+  title: NRF Young Investigator (Type B) Grant Awarded
+  subtitle: Quantum-Inspired Physics-Operator AI in Fluid Mechanics
+  body: |
+    Our lab has been awarded a research grant from the National Research Foundation of Korea (NRF) under the Young Investigator Program (Type B). The project *"Quantum-Inspired Physical-Operator-AI for Next-Generation Fluid Simulation"* will be conducted over five years. This research aims to develop advanced fluid analysis methods by integrating physics-informed AI, operator learning, and quantum-inspired modeling.
+  images:
+    - /assets/images/news/2026-03-nrf-grant.jpg
+
+- date: 2026-March
+  title: New Publication in Engineering Applications of Artificial Intelligence
+  subtitle: "Task-aware evolution in physics-informed neural networks: Application to Saint-Venant torsion problems"
+  body: |
+    Our lab is pleased to announce that the paper **"Task-aware evolution in physics-informed neural networks: Application to Saint-Venant torsion problems"** has been published in *Engineering Applications of Artificial Intelligence*. This study proposes a task-aware PINN framework that combines standard PINN, variable-scaling PINN (VS-PINN), and parametric PINN to accurately and efficiently solve Saint-Venant torsion problems. The approach achieves high accuracy for complex cross-sections, significantly improves stability for stiff geometric transitions, and enables retraining-free, real-time predictions across varying torque conditions—demonstrating strong potential as a mesh-free alternative to FEM for engineering design and optimization.
+  images:
+    - /assets/images/news/2026-03-eaai-pinn.jpg
+
+- date: 2026-Jan
+  title: New Publication in Advances in Engineering Software
+  subtitle: An efficient multiscale coupling method for simulations of reactor-scale chemical vapor deposition with microstructural features
+  body: |
+    Our lab is pleased to announce that our paper, ***"An efficient multiscale coupling method for simulations of reactor-scale chemical vapor deposition with microstructural features"*** has been published in *Advances in Engineering Software* [[link](https://www.sciencedirect.com/science/article/pii/S0965997825001899)], with contributions from collaborators at POSTECH and Samsung Electronics. This work presents a high-fidelity multiscale CVD modeling framework that couples a full 3D reactor-scale model with a parameterized feature-scale model through an effective reaction-rate formulation. The proposed method significantly reduces computational cost while maintaining high accuracy, enabling practical large-scale CVD simulations.
+  images:
+    - /assets/images/news/2026-01-aes-cvd.jpg
+
+- date: 2026-Jan
+  title: New Publication in Future Generation Computer Systems
+  subtitle: Towards a widespread usage of computational fluid dynamics simulations for automated virtual nasal surgery planning
+  body: |
+    Our lab is pleased to announce that the paper ***"Towards a widespread usage of computational fluid dynamics simulations for automated virtual nasal surgery planning"*** has been published in *Future Generation Computer Systems* [[link](https://www.sciencedirect.com/science/article/pii/S0167739X25002304)]. This work was led by Dr. Mario Rüttgers, with contributions from collaborators at RWTH Aachen, University of Latvia, Kobe University, RIKEN, and Forschungszentrum Jülich. The study introduces an efficient hybrid lattice-Boltzmann and level-set–based CFD framework that significantly reduces computational cost for virtual nasal surgery planning. The method enables fast prediction of pressure loss, airflow balance, and tissue-removal implications, making CFD-based surgical planning far more accessible for clinical environments. This publication marks an important advancement toward widespread, automated, and affordable CFD-assisted surgical decision-making.
+  images:
+    - /assets/images/news/2026-01-fgcs-nasal.jpg
+
+- date: 2025-Dec
+  title: New Publication in Physics of Fluids
+  subtitle: Comparative analysis of the flow in a realistic human airway
+  body: |
+    Our lab is pleased to announce that the paper **"Comparative analysis of the flow in a realistic human airway"** has been published in *Physics of Fluids* (2026) [[link](https://pubs.aip.org/aip/pof/article/37/12/121901/3374000)]. Led by Dr. Mario Rüttgers in collaboration with Inha University, RWTH Aachen University, and the Jülich Supercomputing Centre, this study presents an experimentally validated direct numerical simulation of airflow in a realistic human airway, from the nasal cavity to the sixth bronchial bifurcation. Using a high-fidelity lattice-Boltzmann approach, the work reveals how flow instabilities and pressure losses develop across key anatomical regions under different breathing conditions, providing a valuable benchmark for respiratory CFD, diagnostics, and surgical planning.
+  images:
+    - /assets/images/news/2025-12-pof-airway.jpg
+
+- title: Invited Talk at KSCFE
+  body: |
+    Professor Sangseung Lee was invited to give an expert talk on AI-CFD at the Korea Society for Computational Fluids Engineering (KSCFE).
+  images:
+    - /assets/images/news/kscfe-invited-talk.jpg
+
+- title: Early Career Researcher Award!
+  body: |
+    Professor Sangseung Lee has been selected as the recipient of the Early Career Researcher Award by the Korean Society for Visualization (KSV), acknowledging excellence in early-stage research achievements.
+  images:
+    - /assets/images/news/ksv-early-career-award.jpg
+
+- title: New Publication in ICHMT
+  subtitle: Neural network-based thermal model for virtual metrology of lunar orbiter temperatures via active and transfer learning
+  body: |
+    We developed a neural network-based thermal model for Korea's first lunar orbiter, *Danuri*, enabling real-time temperature prediction from the ground. By combining active and transfer learning, our model achieves high accuracy with drastically reduced computation time—serving as a digital twin for spacecraft thermal monitoring. This joint work with POSTECH and KARI pushes the frontier of AI-driven virtual metrology for space missions. Check our work at: [[link]](https://www.sciencedirect.com/science/article/pii/S0735193325004816)
+  images:
+    - /assets/images/news/ichmt-lunar-orbiter.jpg
+
+- title: Prof. Romit Maulik visited DDFE!
+  body: |
+    Happy to host Prof. Romit Maulik (Penn State Univ.) for an invited talk and engaging discussion at Inha University!
+  images:
+    - /assets/images/news/romit-maulik-visit.jpg
+
+- title: Launch of JK-FLOW (Japan-Korea Fluid Mechanics Online Workshop)
+  body: |
+    We are launching JK-FLOW (Japan-Korea Fluid Mechanics Online Workshop), an online seminar series on a wide range of topics in fluid mechanics. Please check [JK-Flow website](https://sites.google.com/view/kai-fukami/jk-flow) for participating!
+  images:
+    - /assets/images/news/jk-flow-1.jpg
+    - /assets/images/news/jk-flow-2.jpg
+
+- title: Prof. Kai Fukami visited DDFE!
+  body: |
+    Happy to host Prof. Kai Fukami (Tohoku Univ.) for an invited talk and engaging discussion at Inha University!
+  images:
+    - /assets/images/news/kai-fukami-visit.jpg
+
+- title: Workshop for AI for Fluid Dynamics Systems
+  body: |
+    DDFE hosted Prof. Kai Fukami (Tohoku Univ., Generalized Super-Resolution Analysis with Machine Learning of Turbulence), Prof. Heechang Lim (Pusan National Univ., Artificial Intelligence-Driven Patterning and Reconstruction of Turbulent Flow Structures), and Dr. Mario Rüttgers (Planing Urban Wind Turbines by Means of Machine Learning and Computational Fluid Dynamics) for a workshop of AI for fluid dynamics systems (Feb. 13).
+  images:
+    - /assets/images/news/ai-fluid-workshop.jpg
+
+- title: DDFE attended KSME Scientific ML Workshop
+  body: |
+    Our group members attended KSME's Scientific Machine Learning Workshop in Seoul, South Korea.
+  images:
+    - /assets/images/news/ksme-sciml-workshop.jpg
+
+- title: New Publication in POF
+  subtitle: Data-driven discovery of drag-inducing elements on a rough surface through convolutional neural networks
+  body: |
+    New publication in Physics of Fluids (POF)! We developed a CNN that predicts drag forces on rough surfaces using only topography data through an international collaboration (INHA, KTH (Sweden), and KIT (Germany)). Our model reveals key patterns linked to drag, offering insights into fluid dynamics without needing complex parameters. Check out how we're advancing data-driven drag prediction ([Link](https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on))!
+  images:
+    - /assets/images/news/2024-pof-rough-surface.jpg
+
+- title: Heesoo Shin Achieves Master's Degree
+  body: |
+    Exciting news! My first graduate, Heesoo Shin, has just earned his Master's degree at Inha University! His outstanding accomplishments here are a testament to his hard work and dedication. Now, he's off to POSTECH for his next academic adventure. Best of luck, Heesoo!
+
+    Check Heesoo's achievements at here: [Link](https://scholar.google.com/citations?user=nQ6vteQAAAAJ&hl=en&oi=ao)
+  images:
+    - /assets/images/news/heesoo-masters.jpg
+
+- title: DDFE Participates in KSME's Emerging Researchers Symposium on Mechanical AI
+  body: |
+    Our laboratory, DDFE, recently attended the Emerging Researchers Symposium on Mechanical AI organized by the Korean Society of Mechanical Engineers (KSME). This event brought together a dynamic group of young and promising researchers who are at the forefront of integrating cutting-edge artificial intelligence technologies to tackle the grand challenges in the field of mechanical engineering.
+  images:
+    - /assets/images/news/ksme-emerging-researchers.jpg
+
+- date: 2024-Oct
+  title: Dr. Mario Rüttgers Joins Our Group
+  body: |
+    We are delighted to announce that Dr. Mario Rüttgers will be joining our team as a Researcher. He recently received his PhD from RWTH Aachen University in Germany, where he made significant contributions to AI and Fluid Mechanics. His expertise and innovative research approach will undoubtedly enhance our group's capabilities and research endeavors. We look forward to the exciting advancements and collaborations that will arise from his presence!
+  images:
+    - /assets/images/news/mario-joins.jpg
+
+- date: 2023-06
+  title: NEW PAPER ALERT!
+  body: |
+    Heesoo's latest research "Effects of spatiotemporal correlations in wind data on neural network-based wind predictions" is accepted in *Energy* [[arXiv link](https://arxiv.org/abs/2304.01545)]!
+    Congratulations to Heesoo for this achievement!
+  images:
+    - /assets/images/news/2023-06-energy-paper.jpg
+
+- date: 2023-05
+  title: VISIT NEWS
+  body: |
+    Sangseung and Heesoo visit Nordita (Stockholm, Sweden) to co-organize "FLOW for Climate: Data-driven methods" and present "AI-Assisted Fluid Engineering for Sustainable Future"
+  images:
+    - /assets/images/news/2023-05-nordita-visit.jpg
+
+- date: 2023-04
+  title: IMPACT NEWS
+  body: |
+    Sangseung's paper "Data-driven prediction of unsteady flow over a circular cylinder using deep learning" published on *Journal of Fluid Mechanics* (2019) [[link]](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/predicting-drag-on-rough-surfaces-by-transfer-learning-of-empirical-correlations/56A1229AA2C805AC8C6100A689501C02) reached 200 citations!
+
+- date: 2022-11
+  title: NEW PAPER ALERT!
+  body: |
+    Heesoo's review paper "Neural Networks for Improving Wind Power Efficiency: A Review" is published on *Fluids* [[link]](https://www.mdpi.com/2311-5521/7/12/367)!
+
+- date: 2022-02
+  title: NEW PAPER ALERT!
+  body: |
+    Sangseung's paper "Predicting drag on rough surfaces by transfer learning of empirical correlations" is published on *Journal of Fluid Mechanics* [[link]](https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/predicting-drag-on-rough-surfaces-by-transfer-learning-of-empirical-correlations/56A1229AA2C805AC8C6100A689501C02)!

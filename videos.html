@@ -1,0 +1,14 @@
+---
+layout: default
+title: Videos
+permalink: /videos/
+---
+<section class="content">
+  <div class="container">
+    <div class="video-grid">
+      {% for v in site.data.videos.list %}
+        {% include video.html video=v %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

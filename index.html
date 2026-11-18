@@ -1,0 +1,53 @@
+---
+layout: default
+title: Home
+hero: /assets/images/hero.jpg
+hero_title: Data-Driven Fluid Engineering Lab.
+---
+
+<section class="section">
+  <div class="container welcome">
+    <div>
+      <h2>Welcome to DDFE!</h2>
+      <p class="lead">Welcome to the <strong>Data-driven Fluid Engineering Lab (DDFE)</strong>.</p>
+      <p>We develop AI-driven frameworks for fluid and physical systems, covering turbulence over rough surfaces, semiconductor process foundation models, fusion and quantum computing–enabled AI, and urban flow prediction and control, with an emphasis on data-driven and explainable modeling of complex multiscale phenomena.</p>
+    </div>
+    {% include video.html video=site.data.videos.intro %}
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <h2>Recent Videos</h2>
+      <a class="more-link" href="{{ '/videos/' | relative_url }}">Click for more videos</a>
+    </div>
+    <div class="video-grid three">
+      {% assign featured = site.data.videos.list | where_exp: "v", "v.featured" %}
+      {% for v in featured limit: 3 %}
+        {% include video.html video=v %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Recent News</h2>
+      <a class="more-link" href="{{ '/news/' | relative_url }}">Click for more News</a>
+    </div>
+    <div class="news-list">
+      {% for n in site.data.news limit: 5 %}
+        {% include news-item.html item=n %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section soft collaborators">
+  <div class="container">
+    <h2 class="center">Collaborators</h2>
+    <img src="{{ '/assets/images/collaborators.png' | relative_url }}" alt="Collaborators: KTH, Aarhus University, KIT, USC, POSTECH, Jeonbuk National University, Samsung, Doosan, Hyundai" loading="lazy">
+  </div>
+</section>

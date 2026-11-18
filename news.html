@@ -1,0 +1,14 @@
+---
+layout: default
+title: News
+permalink: /news/
+---
+<section class="content">
+  <div class="container">
+    <div class="news-list">
+      {% for n in site.data.news %}
+        {% include news-item.html item=n %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

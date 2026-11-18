@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+{% assign groups = "ongoing|completed" | split: "|" %}
+<section class="content">
+  <div class="container">
+    {% for g in groups %}
+    <h2 class="group-title">{% if g == "ongoing" %}Ongoing Projects{% else %}Completed Projects{% endif %}</h2>
+    <ul class="project-list">
+      {% for p in site.data.projects[g] %}
+      <li>
+        <span class="p-title">{{ p.title }}</span>
+        <span class="p-meta">{{ p.sponsor }} | {{ p.period }}</span>
+        <span class="role {% if p.role == 'PI' %}pi{% else %}co{% endif %}">{{ p.role }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</section>

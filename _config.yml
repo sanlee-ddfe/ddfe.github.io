@@ -1,0 +1,29 @@
+# ------------------------------------------------------------
+# DDFE Lab website — Jekyll configuration
+# ------------------------------------------------------------
+title: Data-Driven Fluid Engineering Lab
+short_title: DDFE
+description: >-
+  Data-Driven Fluid Engineering Lab (DDFE) at Inha University —
+  AI-driven frameworks for fluid and physical systems.
+email: sangseunglee@inha.ac.kr
+address: 100, Inha-ro, Michuhol-gu, Incheon
+scholar: https://scholar.google.com/citations?user=ejt60CoAAAAJ&hl=en
+
+# If the repository is named <username>.github.io, leave baseurl empty.
+# If it is a project repository (e.g. github.com/<username>/ddfe),
+# set baseurl to "/ddfe".
+url: ""
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle

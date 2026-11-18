@@ -1,0 +1,26 @@
+# ------------------------------------------------------------
+# YouTube videos — newest first.
+# Videos with "featured: true" also appear under "Recent Videos" on the Home page.
+# id = the part after "watch?v=" in the YouTube URL.
+# ------------------------------------------------------------
+
+intro:
+  id: 1XLeinfNeQU
+  title: Physics-Informed Neural Networks for Harvesting and Saving Flow Energy
+
+list:
+  - id: AH8jOLffJN8
+    title: Zernike-aware NNs for accurate wafer map prediction in chemical vapor deposition processes
+    featured: true
+  - id: rFpMhu9cbXo
+    title: An efficient multiscale coupling method for reactor-scale CVD with microstructural features
+    featured: true
+  - id: U1QlEYzRUFQ
+    title: "Task-aware evolution in PINNs: Application to Saint-Venant torsion problems"
+  - id: 5XhcVHAb73o
+    title: NN-based virtual metrology of lunar orbiter temperatures via active and transfer learning
+  - id: l1ATqT6sHI0
+    title: Effects of spatiotemporal correlations in wind data on neural network-based wind predictions
+  - id: 8H62WmaZK4c
+    title: Data-driven discovery of drag-inducing elements on a rough surface through CNNs
+    featured: true

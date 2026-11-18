@@ -1,0 +1,21 @@
+- title: Home
+  url: /
+- title: Team
+  url: /team/
+  children:
+    - title: Current members
+      url: /team/current-members/
+    - title: Alumni
+      url: /team/alumni/
+    - title: Open positions
+      url: /team/open-positions/
+- title: Publications
+  url: /publications/
+- title: Videos
+  url: /videos/
+- title: News
+  url: /news/
+- title: Projects
+  url: /projects/
+- title: Contact us
+  url: /contact-us/

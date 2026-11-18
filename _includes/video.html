@@ -1,0 +1,6 @@
+<figure class="video">
+  <div class="video-frame">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ include.video.id }}" title="{{ include.video.title | escape }}" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  {% if include.video.title %}<figcaption>{{ include.video.title }}</figcaption>{% endif %}
+</figure>
