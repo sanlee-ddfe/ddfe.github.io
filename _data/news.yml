@@ -14,7 +14,7 @@
   title: Accepted in Journal of Computational Physics
   subtitle: Heteroscedastic Residual Learning for Dynamic Adaptive Mesh Refinement in Bluff-Body Wake Flows
   body: |
-    Our lab is pleased to announce that the paper **"Heteroscedastic Residual Learning for Dynamic Adaptive Mesh Refinement in Bluff-Body Wake Flows"** by Jiwon Kang, Minhyeok Oh and Jongmin Son, in collaboration with Prof. Joongoo Jeon (POSTECH), has been accepted for publication in *Journal of Computational Physics*. This study presents a deep-learning adaptive mesh refinement policy (DL-AMR): a heteroscedastic U-Net predicts where a coarse mesh departs from the fine-mesh solution, together with its uncertainty, and drives runtime mesh refinement in OpenFOAM. At a common cell budget, DL-AMR gives the lowest mean-wake error on circular and square cylinders, comes within about 1% of the best on a diamond cylinder, and has a smaller shedding-frequency error than classical indicators — at 23% of the fine-mesh cost, and without retraining for unseen bluff-body geometries.
+    Jiwon, Minhyeok and Jongmin's paper has been accepted in *Journal of Computational Physics*. Their deep-learning adaptive mesh refinement (DL-AMR) places mesh resolution using a learned uncertainty map, matching or outperforming classical refinement indicators at 23% of the fine-mesh cost.
   images:
     - /assets/images/news/2026-11-jcp-amr.jpg
 
