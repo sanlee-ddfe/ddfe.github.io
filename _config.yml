@@ -27,3 +27,4 @@ exclude:
   - Gemfile.lock
   - vendor
   - .bundle
+  - papers
