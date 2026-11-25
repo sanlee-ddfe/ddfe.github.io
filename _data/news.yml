@@ -11,14 +11,6 @@
 # ------------------------------------------------------------
 
 - date: 2026-Nov
-  title: Published in European Journal of Mechanics / B Fluids
-  subtitle: Flow Physics and Thermal Transport for Steady Nasal versus Oral Inhalation in a Realistic Human Airway
-  body: |
-    A paper led by our former postdoc, Prof. Mario Rüttgers (SUNY Korea), has been published in *European Journal of Mechanics / B Fluids*. Fully resolved simulations of a realistic human airway show that oral inhalation has only 11–15% of the nasal flow resistance, while the nose conditions the temperature of inhaled air far better.
-  images:
-    - /assets/images/news/2026-11-ejmb-airway.jpg
-
-- date: 2026-Nov
   title: Published in Journal of Computational Physics
   subtitle: Heteroscedastic Residual Learning for Dynamic Adaptive Mesh Refinement in Bluff-Body Wake Flows
   body: |
@@ -33,6 +25,14 @@
     Our joint paper with Prof. Joongoo Jeon's group (POSTECH) has been published in *Reliability Engineering & System Safety*. The ABC-Transformer forecasts 72-hour nuclear severe-accident transients at 5-minute resolution and flags likely unreliable predictions so they can be rechecked with the MAAP code.
   images:
     - /assets/images/news/2026-10-ress-abc-transformer.jpg
+
+- date: 2026-Nov
+  title: Published in European Journal of Mechanics / B Fluids
+  subtitle: Flow Physics and Thermal Transport for Steady Nasal versus Oral Inhalation in a Realistic Human Airway
+  body: |
+    A paper led by our former postdoc, Prof. Mario Rüttgers (SUNY Korea), has been published in *European Journal of Mechanics / B Fluids*. Fully resolved simulations of a realistic human airway show that oral inhalation has only 11–15% of the nasal flow resistance, while the nose conditions the temperature of inhaled air far better.
+  images:
+    - /assets/images/news/2026-11-ejmb-airway.jpg
 
 - date: 2026-Oct
   title: Hojin and Jinsu presented at KSCFE
