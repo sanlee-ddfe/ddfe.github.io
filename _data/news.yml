@@ -19,18 +19,18 @@
     - /assets/images/news/2026-11-ejmb-airway.jpg
 
 - date: 2026-Nov
-  title: Accepted in Journal of Computational Physics
+  title: Published in Journal of Computational Physics
   subtitle: Heteroscedastic Residual Learning for Dynamic Adaptive Mesh Refinement in Bluff-Body Wake Flows
   body: |
-    Jiwon, Minhyeok and Jongmin's paper has been accepted in *Journal of Computational Physics*. Their deep-learning adaptive mesh refinement (DL-AMR) places mesh resolution using a learned uncertainty map, matching or outperforming classical refinement indicators at 23% of the fine-mesh cost.
+    Jiwon, Minhyeok and Jongmin's paper has been published in *Journal of Computational Physics*. Their deep-learning adaptive mesh refinement (DL-AMR) places mesh resolution using a learned uncertainty map, matching or outperforming classical refinement indicators at 23% of the fine-mesh cost.
   images:
     - /assets/images/news/2026-11-jcp-amr.jpg
 
-- date: 2026-Oct
-  title: Accepted in Reliability Engineering & System Safety
+- date: 2026-Nov
+  title: Published in Reliability Engineering & System Safety
   subtitle: Enhancing Resolution and Reliability with Attention Mechanisms in Nuclear Accident Surrogate Modeling
   body: |
-    Our joint paper with Prof. Joongoo Jeon's group (POSTECH) has been accepted in *Reliability Engineering & System Safety*. The ABC-Transformer forecasts 72-hour nuclear severe-accident transients at 5-minute resolution and flags likely unreliable predictions so they can be rechecked with the MAAP code.
+    Our joint paper with Prof. Joongoo Jeon's group (POSTECH) has been published in *Reliability Engineering & System Safety*. The ABC-Transformer forecasts 72-hour nuclear severe-accident transients at 5-minute resolution and flags likely unreliable predictions so they can be rechecked with the MAAP code.
   images:
     - /assets/images/news/2026-10-ress-abc-transformer.jpg
 

@@ -45,7 +45,8 @@ themes:
   - title: AI-Driven Adaptive Mesh Refinement for SMR
     impact: Deep-learning adaptive mesh refinement (AMR) that puts resolution where the simulation needs it — toward fast, accurate thermal-hydraulic analysis of small modular reactors (SMR).
     highlights:
-      - label: J. Comput. Phys. 2026 (accepted)
+      - label: J. Comput. Phys. 2027
+        url: https://doi.org/10.1016/j.jcp.2026.115596
       - label: 14NCFE 2026 · Bayesian optimization of AMR parameters
     partners: POSTECH, NRF
 
