@@ -1,13 +1,18 @@
 # ------------------------------------------------------------
-# Research page (/research/)
+# Research — shown on Home ("Research Areas" cards) and /research/
 #
 #   intro:      one-line mission statement
-#   keywords:   tags shown under the intro
-#   themes:
-#     title:      theme name
-#     impact:     one sentence
-#     highlights: key papers / projects (label shown, url optional)
-#     partners:   sponsors / collaborators (one line)
+#   keywords:   tags shown under the intro (Research page)
+#   areas:      3 research areas (Home cards + Research page sections)
+#     id:         anchor on the Research page (/research/#id)
+#     title:      area name
+#     summary:    one sentence (shown on Home and Research page)
+#     topics:     keyword tags shown on the Home card
+#     art:        animated illustration (assets/js/flow-art.js): cylinder | optimize | rough
+#     papers:     representative papers (venue, title, url) — Home cards + Research page
+#     themes:     sub-themes shown on the Research page
+#       title, impact (one sentence), highlights (label, url optional),
+#       partners (one line)
 # ------------------------------------------------------------
 
 intro: We accelerate the analysis and design of fluid engineering systems with AI — turning expensive flow problems into fast, reliable predictions.
@@ -21,84 +26,146 @@ keywords:
   - Turbulence
   - Semiconductor processes
   - Marine system design
+  - Design optimization
   - Ventilation & smoke control
   - Digital twins
+  - Explainable AI
 
-themes:
-  - title: Physics AI & Neural Operators
-    impact: Neural networks that learn flow physics — from deep-learning prediction of vortex shedding to physics-informed networks and neural operators.
-    highlights:
-      - label: J. Fluid Mech. 2019 · Top-10 most cited in JFM
+areas:
+  - id: simulation
+    title: Data-Driven Simulation Acceleration
+    summary: AI that makes fluid simulation faster — neural operators, quantum-inspired AI (QI) and deep-learning adaptive mesh refinement (AMR), toward rapid thermal-hydraulic analysis of small modular reactors (SMR).
+    topics:
+      - Neural operators
+      - Quantum-inspired AI (QI)
+      - Adaptive mesh refinement (AMR)
+      - Small modular reactors (SMR)
+    art: cylinder
+    papers:
+      - venue: J. Fluid Mech. 2019
+        title: Data-driven prediction of unsteady flow over a circular cylinder using deep learning
         url: https://doi.org/10.1017/jfm.2019.700
-      - label: Phys. Fluids 2021
-        url: https://arxiv.org/abs/1909.06042
-      - label: Eng. Appl. Artif. Intell. 2026
-    partners: NRF
-
-  - title: Quantum-Inspired AI (QI)
-    impact: Quantum-inspired physical AI and neural operators for next-generation fluid simulation.
-    highlights:
-      - label: NRF Young Investigator Program (2026–2031)
-      - label: Korea–Japan Workshop on Physical AI & Fluid Mechanics (2026–2027)
-    partners: National Research Foundation of Korea (NRF)
-
-  - title: AI-Driven Adaptive Mesh Refinement for SMR
-    impact: Deep-learning adaptive mesh refinement (AMR) that puts resolution where the simulation needs it — toward fast, accurate thermal-hydraulic analysis of small modular reactors (SMR).
-    highlights:
-      - label: J. Comput. Phys. 2027
+      - venue: J. Comput. Phys. 2027
+        title: Heteroscedastic residual learning for dynamic adaptive mesh refinement in bluff-body wake flows
         url: https://doi.org/10.1016/j.jcp.2026.115596
-      - label: 14NCFE 2026 · Bayesian optimization of AMR parameters
-    partners: POSTECH, NRF
+      - venue: Reliab. Eng. Syst. Saf. 2026
+        title: Enhancing resolution and reliability with attention mechanisms in nuclear accident surrogate modeling
+        url: https://doi.org/10.1016/j.ress.2026.113783
+    themes:
+      - title: Physics AI & Neural Operators
+        impact: Neural networks that learn flow physics — from deep-learning prediction of vortex shedding to physics-informed networks and neural operators.
+        highlights:
+          - label: J. Fluid Mech. 2019 · Top-10 most cited in JFM
+            url: https://doi.org/10.1017/jfm.2019.700
+          - label: Phys. Fluids 2021
+            url: https://arxiv.org/abs/1909.06042
+          - label: Eng. Appl. Artif. Intell. 2026
+        partners: NRF
 
-  - title: AI for Semiconductor Processes
-    impact: Physics-aware AI surrogates and multiscale CFD for CVD, ALD and wafer bonding — accurate even with scarce process data.
-    highlights:
-      - label: Eng. Appl. Artif. Intell. 2026
-      - label: Adv. Eng. Softw. 2026
+      - title: Quantum-Inspired AI (QI)
+        impact: Quantum-inspired physical AI and neural operators for next-generation fluid simulation.
+        highlights:
+          - label: NRF Young Investigator Program (2026–2031)
+          - label: Korea–Japan Workshop on Physical AI & Fluid Mechanics (2026–2027)
+        partners: National Research Foundation of Korea (NRF)
+
+      - title: AI-Driven Adaptive Mesh Refinement for SMR
+        impact: Deep-learning adaptive mesh refinement (AMR) that puts resolution where the simulation needs it — toward fast, accurate thermal-hydraulic analysis of small modular reactors (SMR).
+        highlights:
+          - label: J. Comput. Phys. 2027
+            url: https://doi.org/10.1016/j.jcp.2026.115596
+          - label: 14NCFE 2026 · Bayesian optimization of AMR parameters
+        partners: POSTECH, NRF
+
+  - id: optimization
+    title: Data-Driven System Optimization
+    summary: AI surrogates and Bayesian optimization for engineering systems — semiconductor processes, marine structures and ventilation systems — and digital twins of real systems.
+    topics:
+      - Design optimization
+      - Ventilation systems
+      - Semiconductor processes
+      - Marine systems
+      - Digital twins
+    art: optimize
+    papers:
+      - venue: Eng. Appl. Artif. Intell. 2026
+        title: Zernike-aware neural networks for accurate wafer map prediction in chemical vapor deposition processes
+        url: https://doi.org/10.1016/j.engappai.2026.115016
+      - venue: Adv. Eng. Softw. 2026
+        title: An efficient multiscale coupling method for simulations of reactor-scale chemical vapor deposition with microstructural features
         url: https://www.sciencedirect.com/science/article/pii/S0965997825001899
-    partners: Samsung Electronics (3 projects)
-
-  - title: Marine System Design Optimization
-    impact: AI-accelerated design optimization of marine systems such as current deflecting walls (CDW), together with ocean engineering researchers.
-    highlights:
-      - label: Marine Space and Resource Utilization Research (2026–2027)
-    partners: Korea Institute of Marine Science & Technology Promotion (KIMST)
-
-  - title: Underground Parking Ventilation
-    impact: Edge-AI ventilation and smoke control for underground parking lots — optimizing jet fans and tracing pollutant sources in real time.
-    highlights:
-      - label: KSCFE 2026 · Bayesian optimization of jet fan speeds
-      - label: KSCFE 2026 · Pollutant source tracking with source-to-sensor operators
-    partners: Ministry of SMEs and Startups, NBCore Co., Ltd.
-
-  - title: Turbulence over Rough Surfaces
-    impact: Predicting drag directly from surface topography — and explaining which roughness features cause it.
-    highlights:
-      - label: J. Fluid Mech. 2022
-        url: https://arxiv.org/abs/2106.05995
-      - label: Phys. Fluids 2024
-        url: https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on
-      - label: Flow 2025
-        url: https://arxiv.org/abs/2405.09256
-    partners: KTH (Sweden), KIT (Germany), NRF
-
-  - title: Urban & Energy Flows
-    impact: Rapid AI prediction of urban wind, flooding, typhoons and wind energy.
-    highlights:
-      - label: Energy 2023
-        url: https://arxiv.org/abs/2304.01545
-      - label: Fluids 2022
-        url: https://www.mdpi.com/2311-5521/7/12/367
-      - label: Sci. Rep. 2019
-    partners: E8 Co., Ltd.
-
-  - title: Digital Twins
-    impact: AI-assisted digital twins of real systems — Korea's lunar orbiter, the human airway, and industrial processes.
-    highlights:
-      - label: Int. Commun. Heat Mass Transf. 2025
+      - venue: Int. Commun. Heat Mass Transf. 2025
+        title: Neural network-based thermal model for virtual metrology of lunar orbiter temperatures via active and transfer learning
         url: https://www.sciencedirect.com/science/article/pii/S0735193325004816
-      - label: Phys. Fluids 2025
-        url: https://pubs.aip.org/aip/pof/article/37/12/121901/3374000
-      - label: Future Gener. Comput. Syst. 2026
-        url: https://www.sciencedirect.com/science/article/pii/S0167739X25002304
-    partners: KARI, POSTECH, RWTH Aachen University
+    themes:
+      - title: AI for Semiconductor Processes
+        impact: Physics-aware AI surrogates and multiscale CFD for CVD, ALD and wafer bonding — accurate even with scarce process data.
+        highlights:
+          - label: Eng. Appl. Artif. Intell. 2026
+          - label: Adv. Eng. Softw. 2026
+            url: https://www.sciencedirect.com/science/article/pii/S0965997825001899
+        partners: Samsung Electronics (3 projects)
+
+      - title: Marine System Design Optimization
+        impact: AI-accelerated design optimization of marine systems such as current deflecting walls (CDW), together with ocean engineering researchers.
+        highlights:
+          - label: Marine Space and Resource Utilization Research (2026–2027)
+        partners: Korea Institute of Marine Science & Technology Promotion (KIMST)
+
+      - title: Underground Parking Ventilation
+        impact: Edge-AI ventilation and smoke control for underground parking lots — optimizing jet fans and tracing pollutant sources in real time.
+        highlights:
+          - label: KSCFE 2026 · Bayesian optimization of jet fan speeds
+          - label: KSCFE 2026 · Pollutant source tracking with source-to-sensor operators
+        partners: Ministry of SMEs and Startups, NBCore Co., Ltd.
+
+      - title: Digital Twins
+        impact: AI-assisted digital twins of real systems — Korea's lunar orbiter, the human airway, and industrial processes.
+        highlights:
+          - label: Int. Commun. Heat Mass Transf. 2025
+            url: https://www.sciencedirect.com/science/article/pii/S0735193325004816
+          - label: Phys. Fluids 2025
+            url: https://pubs.aip.org/aip/pof/article/37/12/121901/3374000
+          - label: Future Gener. Comput. Syst. 2026
+            url: https://www.sciencedirect.com/science/article/pii/S0167739X25002304
+        partners: KARI, POSTECH, RWTH Aachen University
+
+  - id: discovery
+    title: Data-Driven Physics Discovery
+    summary: Explainable AI that extracts physics from flow data — which roughness features cause turbulent drag, and what makes wind and urban flows predictable.
+    topics:
+      - Explainable AI
+      - Rough-wall turbulence
+      - Urban & wind flows
+    art: rough
+    papers:
+      - venue: J. Fluid Mech. 2022
+        title: Predicting drag on rough surfaces by transfer learning of empirical correlations
+        url: https://doi.org/10.1017/jfm.2021.1041
+      - venue: Phys. Fluids 2024
+        title: Data-driven discovery of drag-inducing elements on a rough surface through convolutional neural networks
+        url: https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on
+      - venue: Energy 2023
+        title: Effects of spatiotemporal correlations in wind data on neural network-based wind predictions
+        url: https://arxiv.org/abs/2304.01545
+    themes:
+      - title: Turbulence over Rough Surfaces
+        impact: Predicting drag directly from surface topography — and explaining which roughness features cause it.
+        highlights:
+          - label: J. Fluid Mech. 2022
+            url: https://arxiv.org/abs/2106.05995
+          - label: Phys. Fluids 2024
+            url: https://pubs.aip.org/aip/pof/article-abstract/36/9/095172/3314249/Data-driven-discovery-of-drag-inducing-elements-on
+          - label: Flow 2025
+            url: https://arxiv.org/abs/2405.09256
+        partners: KTH (Sweden), KIT (Germany), NRF
+
+      - title: Urban & Energy Flows
+        impact: Rapid AI prediction of urban wind, flooding, typhoons and wind energy.
+        highlights:
+          - label: Energy 2023
+            url: https://arxiv.org/abs/2304.01545
+          - label: Fluids 2022
+            url: https://www.mdpi.com/2311-5521/7/12/367
+          - label: Sci. Rep. 2019
+        partners: E8 Co., Ltd.

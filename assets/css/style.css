@@ -236,3 +236,50 @@ h3 { font-size: 1.15rem; margin: 0 0 .4rem; }
 .keyword-row { display: flex; flex-wrap: wrap; gap: 8px; margin: -0.8rem 0 2.5rem; }
 .keyword { display: inline-block; padding: 4px 10px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: .88rem; }
 .keyword-main { border-color: var(--accent); color: var(--heading); font-weight: 600; }
+
+/* ---------- Research areas (Home cards + Research page) ---------- */
+.area-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.area-card {
+  display: flex; flex-direction: column; background: var(--surface); border-top: 4px solid var(--accent); color: var(--text);
+  transition: background .15s, border-color .15s, box-shadow .15s;
+}
+.area-card:hover { text-decoration: none; background: var(--surface-hover); border-top-color: var(--heading); box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.area-media { position: relative; aspect-ratio: 16 / 10; background: #0d1a2b; overflow: hidden; border-bottom: 1px solid var(--line); }
+.flow-art { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.area-body { display: flex; flex-direction: column; gap: 8px; flex: 1; padding: 22px 24px 24px; }
+.area-num { font-size: .85rem; font-weight: 700; letter-spacing: .05em; color: var(--accent); }
+.area-title { font-size: 1.35rem; margin: 0; color: var(--heading); }
+.area-title a { color: inherit; }
+.area-title a:hover { text-decoration: none; color: var(--accent); }
+.area-media { display: block; }
+.area-papers-label { margin: 10px 0 0; font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.area-papers { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.area-papers a { display: block; font-size: .86rem; line-height: 1.4; color: var(--text); }
+.area-papers a:hover { text-decoration: none; }
+.area-papers a:hover .paper-title { color: var(--heading); text-decoration: underline; }
+.paper-venue { display: block; font-weight: 700; color: var(--accent); font-size: .8rem; }
+.paper-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--muted); }
+.area-key { margin: 0 0 1.8rem; max-width: 860px; }
+.area-key .paper-title { -webkit-line-clamp: unset; display: inline; }
+.area-key .paper-venue { display: inline; margin-right: .5em; font-size: .9rem; }
+.area-key .area-papers a { font-size: .95rem; }
+.area-summary { margin: 0; font-size: .98rem; line-height: 1.55; color: var(--muted); }
+.area-topics { list-style: none; margin: 2px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.area-topics li { padding: 2px 8px; border: 1px solid var(--accent); color: var(--heading); font-size: .8rem; font-weight: 600; line-height: 1.5; }
+.area-more { margin-top: auto; padding-top: 8px; font-size: .9rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.area-more span { display: inline-block; transition: transform .15s; }
+.area-card:hover .area-more { color: var(--heading); }
+.area-card:hover .area-more span { transform: translateX(4px); }
+@media (max-width: 900px) { .area-cards { grid-template-columns: 1fr; } }
+
+.area { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--line); scroll-margin-top: 90px; }
+.area-head h2 { font-size: 1.8rem; margin: .2rem 0 .5rem; }
+.area-lead { font-size: 1.1rem; max-width: 860px; margin: 0 0 1.6rem; }
+.area-art { position: relative; aspect-ratio: 5 / 2; background: #0d1a2b; margin: 0 0 1rem; border: 1px solid var(--line); }
+.area > .area-topics { margin: 0 0 1rem; }
+.area .themes { border-top-width: 1px; }
+.area .theme:last-child { border-bottom: none; }
+.area .theme h2::before { display: none; }
+.area .theme h2 { font-size: 1.15rem; }
+@media (max-width: 760px) { .area-art { aspect-ratio: 16 / 10; } }
+.area-more:hover { text-decoration: none; }

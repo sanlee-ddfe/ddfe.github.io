@@ -1,0 +1,19 @@
+{% comment %} Home page: 3 research-area cards. Data: _data/research.yml (areas). {% endcomment %}
+<div class="area-cards">
+  {% for a in site.data.research.areas %}
+  {% capture href %}{{ '/research/' | relative_url }}#{{ a.id }}{% endcapture %}
+  <div class="area-card">
+    <a class="area-media" href="{{ href }}" tabindex="-1" aria-hidden="true"><canvas class="flow-art" data-art="{{ a.art }}"{% if a.art == 'cylinder' %} data-src="{{ '/assets/data/cylinder-lbm.bin' | relative_url }}"{% endif %}></canvas></a>
+    <div class="area-body">
+      <span class="area-num">{{ forloop.index | prepend: '0' }}</span>
+      <h3 class="area-title"><a href="{{ href }}">{{ a.title }}</a></h3>
+      <p class="area-summary">{{ a.summary }}</p>
+      <ul class="area-topics">{% for k in a.topics %}<li>{{ k }}</li>{% endfor %}</ul>
+      <p class="area-papers-label">Key papers</p>
+      {% include area-papers.html area=a %}
+      <a class="area-more" href="{{ href }}">Learn more <span>→</span></a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<script src="{{ '/assets/js/flow-art.js' | relative_url }}" defer></script>

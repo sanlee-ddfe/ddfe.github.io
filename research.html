@@ -12,9 +12,24 @@ permalink: /research/
       {% for k in R.keywords %}<span class="keyword{% if forloop.first %} keyword-main{% endif %}">{{ k }}</span>{% endfor %}
     </div>
 
-    <ol class="themes">
-      {% for t in R.themes %}{% include research-theme.html theme=t %}{% endfor %}
-    </ol>
+    {% for a in R.areas %}
+    <section class="area" id="{{ a.id }}">
+      <header class="area-head">
+        <span class="area-num">{{ forloop.index | prepend: '0' }}</span>
+        <h2>{{ a.title }}</h2>
+        <p class="area-lead">{{ a.summary }}</p>
+      </header>
+      <div class="area-art"><canvas class="flow-art" data-art="{{ a.art }}"{% if a.art == 'cylinder' %} data-src="{{ '/assets/data/cylinder-lbm.bin' | relative_url }}"{% endif %} aria-hidden="true"></canvas></div>
+      <ul class="area-topics">{% for k in a.topics %}<li>{{ k }}</li>{% endfor %}</ul>
+      <div class="area-key">
+        <p class="area-papers-label">Representative papers</p>
+        {% include area-papers.html area=a %}
+      </div>
+      <ol class="themes">
+        {% for t in a.themes %}{% include research-theme.html theme=t %}{% endfor %}
+      </ol>
+    </section>
+    {% endfor %}
 
     <div class="cta">
       <p>Interested in a joint project? Let's talk.</p>
@@ -22,3 +37,4 @@ permalink: /research/
     </div>
   </div>
 </section>
+<script src="{{ '/assets/js/flow-art.js' | relative_url }}" defer></script>

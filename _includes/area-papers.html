@@ -1,0 +1,5 @@
+{% comment %} Representative papers of a research area. include.area {% endcomment %}
+<ul class="area-papers">
+  {% for p in include.area.papers %}<li><a href="{{ p.url }}"><span class="paper-venue">{{ p.venue }}</span><span class="paper-title">{{ p.title }}</span></a></li>
+  {% endfor %}
+</ul>
