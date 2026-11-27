@@ -9,6 +9,9 @@ intro:
   title: Physics-Informed Neural Networks for Harvesting and Saving Flow Energy
 
 list:
+  - id: 23CemBZvyzM
+    title: Heteroscedastic residual learning for dynamic AMR in bluff-body wake flows
+    featured: true
   - id: AH8jOLffJN8
     title: Zernike-aware NNs for accurate wafer map prediction in chemical vapor deposition processes
     featured: true
