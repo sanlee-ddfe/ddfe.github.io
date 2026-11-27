@@ -33,7 +33,7 @@ keywords:
 
 areas:
   - id: simulation
-    title: Data-Driven Simulation Acceleration
+    title: Data-Driven Fluid Simulation Acceleration
     summary: AI that makes fluid simulation faster — neural operators, quantum-inspired AI (QI) and deep-learning adaptive mesh refinement (AMR), toward rapid thermal-hydraulic analysis of small modular reactors (SMR).
     topics:
       - Neural operators
@@ -78,7 +78,7 @@ areas:
         partners: POSTECH, NRF
 
   - id: optimization
-    title: Data-Driven System Optimization
+    title: Data-Driven Fluid System Optimization
     summary: AI surrogates and Bayesian optimization for engineering systems — semiconductor processes, marine structures and ventilation systems — and digital twins of real systems.
     topics:
       - Design optimization
@@ -131,7 +131,7 @@ areas:
         partners: KARI, POSTECH, RWTH Aachen University
 
   - id: discovery
-    title: Data-Driven Physics Discovery
+    title: Data-Driven Fluid Physics Discovery
     summary: Explainable AI that extracts physics from flow data — which roughness features cause turbulent drag, and what makes wind and urban flows predictable.
     topics:
       - Explainable AI
